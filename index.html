@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Parksi.de - a portfolio for Andrew Slaughter</title>
+
+	<link rel="stylesheet" media="screen" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dave Shea">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="robots" content="all">
+
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+var canvas = document.getElementById('canvas'),
+    ctx = canvas.getContext('2d');
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+window.onresize = resize;
+
+function noise(ctx) {
+    
+    var w = ctx.canvas.width,
+        h = ctx.canvas.height,
+        idata = ctx.createImageData(w, h),
+        buffer32 = new Uint32Array(idata.data.buffer),
+        len = buffer32.length,
+        i = 0;
+
+    for(; i < len;)
+        buffer32[i++] = ((255 * Math.random())|0) << 24;
+    
+    ctx.putImageData(idata, 0, 0);
+}
+
+var toggle = false;
+
+// added toggle to get 30 FPS instead of 60 FPS
+(function loop() {
+    toggle = !toggle;
+    if (toggle) {
+        requestAnimationFrame(loop);
+        return;
+    }
+    noise(ctx);
+    requestAnimationFrame(loop);
+})();
+
+var myElement = document.querySelector("#canvas");
+myElement.style.backgroundColor = "#00FF06";
+
+$('#yo').hover(function() {
+   $('#ok').css('display','block');
+},
+function(){
+	$('#ok').css('display','none');
+}
+);
+
+$('#yo2').hover(function() {
+   $('#ok2').css('display','block');
+},
+function(){
+	$('#ok2').css('display','none');
+}
+);
+
+$('#yo3').hover(function() {
+   $('#ok3').css('display','block');
+},
+function(){
+	$('#ok3').css('display','none');
+}
+);
+
+$('#yo4').hover(function() {
+   $('#ok4').css('display','block');
+},
+function(){
+	$('#ok4').css('display','none');
+}
+);
+
+$('#yo5').hover(function() {
+   $('#ok5').css('display','block');
+},
+function(){
+	$('#ok5').css('display','none');
+}
+);
+
+$('#yo6').hover(function() {
+   $('#ok6').css('display','block');
+},
+function(){
+	$('#ok6').css('display','none');
+}
+);
+
+$('#yo7').hover(function() {
+   $('#ok7').css('display','block');
+},
+function(){
+	$('#ok7').css('display','none');
+}
+);
+
+$('#yo8').hover(function() {$('#ok8').css('display','block');}, function(){ $('#ok8').css('display','none');});
+
+}//]]> 
+
+</script>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+	<section class="main">
+		<header>
+			<h1>Andrew's Work:</h1>
+			<div style="overflow: hidden">
+				<ul class="links">
+					<li><a id="yo" href="http://makeschool.com" target="_blank"><h4>Make School</h4></a></li>
+					<li><a id="yo2" href="http://fart.watch" target="_blank"><h4>Fart Watch</h4></a></li>
+					<!-- <li><a id="yo2" href="https://cler.gy/" target="_blank"><h4>Tripbright</h4></a></li> -->
+					<li><a id="yo3" href="http://hipster.domains" target="_blank"><h4>Hipster Domains</h4></a></li>
+					<li><a id="yo4" href="https://tripbright.com/" target="_blank"><h4>Tripbright</h4></a></li>
+					<li><a id="yo5" href="https://mailform.io/" target="_blank"><h4>Mailform</h4></a></li>
+					<li><a id="yo6" href="http://watchpop.com" target="_blank"><h4>WatchPop</h4></a></li>
+					<li><a id="yo7" href="http://videotap.es" target="_blank"><h4>Videotap.es</h4></a></li>
+					<li><a id="yo8" href="http://basscrib.com" target="_blank"><h4>BassCrib</h4></a></li>
+				</ul>
+				<ul class="otherside">
+					<li><a id="ok" target="_blank"><h5>Design / CSS / Game Producer</h5></a></li>
+					<li><a id="ok2" target="_blank"><h5>Design / Brand / Viral</h5></a></li>
+					<li><a id="ok3" target="_blank"><h5>CSS / Idea Guy</h5></a></li>
+					<li><a id="ok4" target="_blank"><h5>Founder / CSS / UX / Brand (wip)</h5></a></li>
+					<li><a id="ok5" target="_blank"><h5>Co-Founder / UX / CSS / Brand (wip)</h5></a></li>
+					<li><a id="ok6" target="_blank"><h5>Creator / Design / Marketing</h5></a></li>
+					<li><a id="ok7" target="_blank"><h5>Creator / CSS</h5></a></li>
+					<li><a id="ok8" target="_blank"><h5>Designer / Builder</h5></a></li>
+				</ul>
+			</div>
+		</header>
+	</section>
+
+	<footer>Parksi.de is a portfolio. by Andrew</footer>
+
+</div>
+
+<canvas id="canvas"></canvas>
+
+
+
+</div>
+</body>
+</html>
