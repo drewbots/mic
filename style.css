@@ -227,6 +227,7 @@ ul.otherside li:nth-child(9) { margin-right: 180px; }
 
 	.main:before {
 		border-top: 0px solid #faf3e6;
+		margin: 0em auto -7em -2%;
 	}
 
 	.main {
@@ -235,6 +236,10 @@ ul.otherside li:nth-child(9) { margin-right: 180px; }
 
 	#canvas {
 		position: static;
+	}
+
+	ul.links li:first-child {
+	    margin-top: 16px;
 	}
 
 }
