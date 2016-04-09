@@ -233,8 +233,8 @@ ul.otherside li:nth-child(9) { margin-right: 180px; }
 		padding-top: 0;
 	}
 
-	#career {
-		position: relative;
+	#canvas {
+		position: static;
 	}
 
 }
