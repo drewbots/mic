@@ -213,6 +213,7 @@ ul.otherside li:nth-child(9) { margin-right: 180px; }
 	ul.otherside h5 { 
 		text-align: left; 
 	}
+
 }
 
 @media (max-width:650px) {
@@ -223,19 +224,14 @@ ul.otherside li:nth-child(9) { margin-right: 180px; }
 	.main h1 {
   	font-size: 1.7rem;
 	}
-}
 
-@media (min-width:600px) {
-  body {
-    font-size: 1.12rem;
-    line-height: 1.6;
-  }
+	.main:before {
+		border-top: 0px solid #faf3e6;
+	}
 
-}
+	.main {
+		padding-top: 0;
+	}
 
-@media (min-width:1300px) {
-  body {
-    font-size: 1.375rem;
-  }
 }
 
