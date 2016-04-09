@@ -206,6 +206,7 @@ ul.otherside li:nth-child(5) { margin-right: 89px; }
 ul.otherside li:nth-child(6) { margin-right: 112px; }
 ul.otherside li:nth-child(7) { margin-right: 136px; }
 ul.otherside li:nth-child(8) { margin-right: 160px; }
+ul.otherside li:nth-child(9) { margin-right: 184px; }
 
 
 @media (max-width:1160px) {
