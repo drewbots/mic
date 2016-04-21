@@ -23,7 +23,7 @@ body {
   /*overflow: hidden;*/
   height: 100%;
   margin-top: 600px;
-  font-family: 'courier-std';
+  font-family: 'anonymous-pro';
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
@@ -181,7 +181,7 @@ footer {
   letter-spacing: 0.05em;
   margin-left: 10px;
   margin-bottom: 20px;
-  font-family: monospace;
+  font-family: 'mono45-headline';
 }
 
 ul.links {
