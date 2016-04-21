@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Parksi.de - a portfolio for Andrew Slaughter</title>
+
+	<link rel="stylesheet" media="screen" href="style.css">
+	<link rel="stylesheet" media="screen" href="flex.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dave Shea">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="robots" content="all">
+
+	<!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+var canvas = document.getElementById('canvas'),
+    ctx = canvas.getContext('2d');
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resize();
+window.onresize = resize;
+
+function noise(ctx) {
+    
+    var w = ctx.canvas.width,
+        h = ctx.canvas.height,
+        idata = ctx.createImageData(w, h),
+        buffer32 = new Uint32Array(idata.data.buffer),
+        len = buffer32.length,
+        i = 0;
+
+    for(; i < len;)
+        buffer32[i++] = ((255 * Math.random())|0) << 24;
+    
+    ctx.putImageData(idata, 0, 0);
+}
+
+var toggle = false;
+
+// added toggle to get 30 FPS instead of 60 FPS
+(function loop() {
+    toggle = !toggle;
+    if (toggle) {
+        requestAnimationFrame(loop);
+        return;
+    }
+    noise(ctx);
+    requestAnimationFrame(loop);
+})();
+
+var myElement = document.querySelector("#canvas");
+myElement.style.backgroundColor = "#00FF06";
+
+$('#yo').hover(function() {
+   $('#ok').css('display','block');
+},
+function(){
+	$('#ok').css('display','none');
+}
+);
+
+$('#yo1').hover(function() {
+   $('#ok1').css('display','block');
+},
+function(){
+	$('#ok1').css('display','none');
+}
+);
+
+$('#yo2').hover(function() {
+   $('#ok2').css('display','block');
+},
+function(){
+	$('#ok2').css('display','none');
+}
+);
+
+$('#yo3').hover(function() {
+   $('#ok3').css('display','block');
+},
+function(){
+	$('#ok3').css('display','none');
+}
+);
+
+$('#yo4').hover(function() {
+   $('#ok4').css('display','block');
+},
+function(){
+	$('#ok4').css('display','none');
+}
+);
+
+$('#yo5').hover(function() {
+   $('#ok5').css('display','block');
+},
+function(){
+	$('#ok5').css('display','none');
+}
+);
+
+$('#yo6').hover(function() {
+   $('#ok6').css('display','block');
+},
+function(){
+	$('#ok6').css('display','none');
+}
+);
+
+$('#yo7').hover(function() {
+   $('#ok7').css('display','block');
+},
+function(){
+	$('#ok7').css('display','none');
+}
+);
+
+$('#yo8').hover(function() {$('#ok8').css('display','block');}, function(){ $('#ok8').css('display','none');});
+
+}//]]> 
+
+</script>
+
+</head>
+
+<body class="nonhome">
+
+<div class="page-wrapper">
+
+	<section class="main">
+		<div class="apps">
+			<h1>Game Templates | UX / Design</h1>
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+				<div class="imagewraps">
+					<img src="images/templates/lvlbased/Main Screen.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/templates/lvlbased/Game Screen mockup.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/templates/lvlbased/Game Screen mockup with keys.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/templates/lvlbased/more coins mockup.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/templates/lvlbased/Recap mockup.png">
+				</div>
+			</div>
+
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+					<div class="imagewraps">
+						<img src="images/templates/runner/game UI mockup.png">
+					</div>
+
+				<div class="imagewraps">
+					<img src="images/templates/runner/more coins mockup.png">
+				</div>
+			</div>
+
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+				<div class="flex flexcol justify-w-space-around align-center">	
+					<div class="imagewraps mb4">
+						<img src="images/templates/runner/FINAL_old.png">
+					</div>
+					<div class="imagewraps">
+						<img src="images/templates/runner/Pause_with_missions-ip5.png">
+					</div>
+				</div>
+				<div class="imagewraps">
+					<img src="images/templates/runner/mockup1.png">
+				</div>			
+			</div>
+
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/templates/runner/GamePlay-ip5_withleveldesign.png">
+				</div>
+			</div>
+	
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/ghost/2 altered.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ghost/3.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ghost/4.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ghost/5.png">
+				</div>
+			</div>
+			
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/letshangout/mockup.png">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="apps">
+			<h1>Student Games | UX / Creative Director / Producer</h1>
+			<h4>see published games <a id="yo1" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561">here</a></h1>
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+				<div class="imagewraps">
+					<img src="images/apps/placethatpic/PlaceThatPic1.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/placethatpic/PlaceThatPic3.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/placethatpic/PlaceThatPic2.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/blend/ip5_blend_screenshots-01.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/blend/ip5_blend_screenshots-03.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/blend/ip5_blend_screenshots-02.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/blend/ip5_blend_screenshots-04.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+				<div class="imagewraps">
+					<img src="images/apps/boxjumping/mockup.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/boxjumping/icon.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/boxjumping/gameplay.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/boxjumping/store.jpg">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/busjump/mainmenu_iphone5.jpeg">
+				</div>
+			</div>
+			<div class="imgrow flex justify-center align-center mb4">
+				<div class="imagewraps">
+					<img style="max-width:200px; margin-right:120px;" src="images/apps/catburz/catface.png">
+				</div>
+				<div class="imagewraps">
+					<img class="bigger"src="images/apps/catburz/gamemockup.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-center align-center mb4">
+				<div class="imagewraps" style="margin-right:40px;">
+					<img class="bigger" src="images/apps/catburz/pause.png">
+				</div>
+				<div class="imagewraps">
+					<img class="bigger" src="images/apps/catburz/level-select.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+				<div class="imagewraps">
+					<img src="images/apps/ridiculousclimbing/Ridiculous_climbing_MAIN_MENU_preview_1.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ridiculousclimbing/Ridiculous_climbing_GAMEPLAY_preview_1.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ridiculousclimbing/Ridiculous_climbing_GAMEPLAY_preview_3.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ridiculousclimbing/Ridiculous_climbing_GAME_OVER_preview_1.jpg">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/ridiculousclimbing/Ridiculous_climbing_STORE_MENU_preview_1.jpg">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around align-center mb4">
+				<div class="imagewraps">
+					<img src="images/apps/skypassage/mainMenu-ip5.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/skypassage/appicon.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/skypassage/mockup.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/spacebreakers/1.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/spacebreakers/2.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/littledevil/screenshots_ip5-00.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/numberrush/number_rush_ss_ip5-06.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/numberrush/number_rush_ss_ip5-04.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/numberrush/number_rush_ss_ip5-05.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/dareme/ip5_screenshots-05.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/dareme/ip5_screenshots-03.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/dareme/ip5_screenshots-02.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/fatguyfred/Main_Menu.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/fatguyfred/Gameplay-UI-01.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/fatguyfred/Pause_Screen.png">
+				</div>				
+				<div class="imagewraps">
+					<img src="images/apps/fatguyfred/Recap.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/friz/mockup 4.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/friz/mockup 3.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/friz/mockup.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/evergreen/evergreen_main-menu-screen-ip5.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/evergreen/EVERGREEN_games-ip5.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/evergreen/EVERGREEN_game-screen-ip5.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/evergreen/EVERGREEN_rematch-screen-ip5.png">
+				</div>
+			</div>
+			<div class="imgrow flex justify-w-space-around mb4">
+				<div class="imagewraps">
+					<img src="images/apps/podperfect/HD-PP-01.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/podperfect/HD-PP-07.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/podperfect/HD-PP-03.png">
+				</div>
+				<div class="imagewraps">
+					<img src="images/apps/podperfect/HD-PP-04.png">
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer></footer>
+
+</div>
+
+<canvas id="canvas"></canvas>
+
+
+
+</div>
+</body>
+</html>
