@@ -14,7 +14,7 @@ html,body,span,h1,h2,h3,h4,h5,h6,p,a,ul,li {margin: 0; padding: 0;}
 
 html {
   overflow-y: auto;
-  background: linear-gradient(#faf3e6, #FFFEFB);
+  /*background: linear-gradient(#faf3e6, #FFFEFB);*/
   background-size: 22em;
   height: 100%;
 }
@@ -51,7 +51,7 @@ body:before, body:after {
 
 #thing {
 	margin: -31em 0 22em 16%;
-	background: rgb(85, 238, 85);
+	background: #eeeeee;
 	width: 1400px;
 	height: 800px;
 	/*position: absolute !important;*/
@@ -162,8 +162,8 @@ footer {
   content: "";
   border-left: 153px solid transparent;
   /* border-right: 78px solid #faf3e6; */
-  border-top: 60px solid #faf3e6;
-  border-bottom: 150px solid #faf3e6;
+  border-top: 60px solid #fff;
+  border-bottom: 150px solid #fff;
   margin: 0em auto -6em -2%;
   background: url('../images/small-steps.png') repeat;
   width: 0em;
@@ -181,7 +181,6 @@ footer {
   letter-spacing: 0.05em;
   margin-left: 10px;
   margin-bottom: 20px;
-  font-family: 'mono45-headline';
 }
 
 ul.links {
