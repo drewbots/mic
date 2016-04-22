@@ -30,6 +30,7 @@ body {
   line-height: 1.2em;
   margin-left: 600px;
   margin-right: -600px;
+  color: #000000;
 }
 
 body:before, body:after {
@@ -61,7 +62,46 @@ body:before, body:after {
 	transform: rotate(119deg);
 	opacity: .3;
 	margin-right: 300px;
+
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.3;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: .3;
+    }
+}
+
 
 .credits {
 	  margin-left: -600px;
@@ -133,44 +173,95 @@ footer {
   margin: -1% -2px 0 -2px;
 }
 
-.page-wrapper:before {
+.topbarwrap {
   content: "";
-  height: 26px;
-  background: url('../images/small-steps.png') repeat top;
+  height: 30px;
+  width: 107%;
+  margin-left: -1%;
+  -ms-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+.topborder {
+  content: "";
+  height: 100%;
+  background: url('images/small-steps.png') repeat top;
   /* background-size: 40em; */
   display: block;
 }
 
-.page-wrapper:after {
+
+
+#topbarspeed {
+  -webkit-animation-duration: 2s;
+}
+#trispeed {
+  -webkit-animation-duration: 5s;
+}
+#botbarspeed {
+	-webkit-animation-duration: 3s;
+}
+
+.bottomborder {
   content: "";
-  height: 53px;
-  background: url('../images/small-steps.png') repeat bottom;
+  height: 100%;
+  background: url('images/small-steps.png') repeat bottom;
   display: block;
-  margin: -4px 0 0 0;
+  opacity: .8;
+}
+
+.over {
+	display: block;
+	content: "";
+  height: 6%;
+  margin-top: -6%;
+  -ms-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
+	width: 114%;
+  margin-left: -8%;
+}
+
+.mainwrap {
+	height: 123%;
+	margin-top: -5%;
+  z-index: 2;
+  position: relative;
+  -ms-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	transform: rotate(-1deg);
 }
 
 .main {
-  height: 99%;
+  height: 100%;
   clear: both;
-  padding-top: 2em;
-  background: url('../images/small-steps.png') repeat-y top left, url('../images/small-steps.png') repeat-y right 100px;
-  background-size: 0.75em, 1.65em;
-  margin: 0 -5px 0 0;
+  background: url('images/small-steps.png') repeat-y top left, url('images/small-steps.png') repeat-y right 100px;
+  background-size: 1em, 1.85em;
+  opacity: .8;
 }
 
-.main:before {
+.content {
+	padding: 100px 0 0 40px;
+  -ms-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+.triangle {
   content: "";
   border-left: 153px solid transparent;
   /* border-right: 78px solid #faf3e6; */
   border-top: 60px solid #fff;
   border-bottom: 150px solid #fff;
-  margin: 0em auto -6em -2%;
-  background: url('../images/small-steps.png') repeat;
+  margin: 2em auto -6em -2%;
+  background: url('images/small-steps.png') repeat;
   width: 0em;
   height: 0em;
   display: block;
-  z-index: -1;
+  z-index: -5;
   position: absolute;
+  opacity: .8;
 }
 
 .main h1 {
@@ -295,6 +386,7 @@ ul.otherside h5 {
 	}
 
 }
+
 
 
 
