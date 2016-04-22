@@ -31,7 +31,6 @@ body {
   margin-left: 600px;
   margin-right: -600px;
   color: #000000;
-  transform-style: preserve-3d;
 }
 
 body:before, body:after {
@@ -67,12 +66,41 @@ body:before, body:after {
 	position: absolute;
 }
 
+.thingwrap2 {
+	margin: -31em 0 22em 16%;
+		pointer-events: none;
+	-ms-transform: rotate(119deg) translateZ(0);
+	-webkit-transform: rotate(119deg) translateZ(0);
+	transform: rotate(119deg) translateZ(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+	width: 1400px;
+	height: 800px;
+	z-index: -2;
+	position: absolute;
+}
+
+.thingwrap:after, .thingwrap2:after. {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  bottom: -50px;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+}
+
 #thing {
 	
 	background: #eeeeee;
 	width: 100%;
 	height: 100%;	
-	opacity: .3;
+	opacity: .1;
+			-webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 
     animation: fadein 5s;
     -moz-animation: fadein 5s; /* Firefox */
@@ -85,7 +113,7 @@ body:before, body:after {
         opacity:0;
     }
     to {
-        opacity:.3;
+        opacity:.1;
     }
 }
 @-moz-keyframes fadein { /* Firefox */
@@ -93,7 +121,7 @@ body:before, body:after {
         opacity:0;
     }
     to {
-        opacity:.3;
+        opacity:.1;
     }
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
@@ -101,7 +129,7 @@ body:before, body:after {
         opacity:0;
     }
     to {
-        opacity:.3;
+        opacity:.1;
     }
 }
 @-o-keyframes fadein { /* Opera */
@@ -109,20 +137,59 @@ body:before, body:after {
         opacity:0;
     }
     to {
-        opacity: .3;
+        opacity: .1;
     }
 }
 
-.thing:after {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  border-radius: 50%;
-  left: 0;
-  bottom: -50px;
-  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+#thing2 {
+	
+	background: #eeeeee;
+	width: 100%;
+	height: 100%;	
+	opacity: .2;
+			-webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.2;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.2;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.2;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: .2;
+    }
+}
+
+
 
 
 .credits {
