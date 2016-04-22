@@ -64,6 +64,16 @@
 			$('#yo7').hover(function() { $('#ok7').css('display','block'); }, function(){ $('#ok7').css('display','none'); });
 			$('#yo8').hover(function() { $('#ok8').css('display','block'); }, function(){ $('#ok8').css('display','none'); });
 
+
+			var card = $(".thing");
+
+			$(document).on("mousemove",function(e) {  
+			  var ax = -($(window).innerWidth()/2- e.pageX)/20;
+			  var ay = ($(window).innerHeight()/2- e.pageY)/10;
+			  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+			});
+
+
 	}//]]> 
 
 	</script>
@@ -112,7 +122,7 @@
 	</div>
 </div>
 
-<div id="thing" class=""></div>
+<div class="thingwrap"><div id="thing" class="thing"></div></div>
 <div class="credits">hello hello</div>
 
 </body>

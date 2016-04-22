@@ -31,6 +31,7 @@ body {
   margin-left: 600px;
   margin-right: -600px;
   color: #000000;
+  transform-style: preserve-3d;
 }
 
 body:before, body:after {
@@ -50,18 +51,28 @@ body:before, body:after {
   background: #279A2A url('../images/img-halftone.png') repeat;
 }*/
 
-#thing {
+.thingwrap {
 	margin: -31em 0 22em 16%;
-	background: #eeeeee;
+		pointer-events: none;
+	-ms-transform: rotate(119deg) translateZ(0);
+	-webkit-transform: rotate(119deg) translateZ(0);
+	transform: rotate(119deg) translateZ(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 	width: 1400px;
 	height: 800px;
-	/*position: absolute !important;*/
 	z-index: -2;
-	-ms-transform: rotate(119deg);
-	-webkit-transform: rotate(119deg);
-	transform: rotate(119deg);
+	position: absolute;
+}
+
+#thing {
+	
+	background: #eeeeee;
+	width: 100%;
+	height: 100%;	
 	opacity: .3;
-	margin-right: 300px;
 
     animation: fadein 5s;
     -moz-animation: fadein 5s; /* Firefox */
@@ -100,6 +111,17 @@ body:before, body:after {
     to {
         opacity: .3;
     }
+}
+
+.thing:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  bottom: -50px;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
 }
 
 
