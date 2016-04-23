@@ -22,7 +22,7 @@ html {
 body {
   overflow: hidden;
   height: 100%;
-  margin: 0 -600px auto 600px;
+  margin: 0;
   font-family: 'anonymous-pro';
   font-size: 1.25rem;
   font-weight: 400;
