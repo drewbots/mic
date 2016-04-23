@@ -98,13 +98,13 @@ body:before, body:after {
 	width: 100%;
 	height: 100%;	
 	opacity: .1;
-			-webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 
-    animation: fadein 5s;
-    -moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari and Chrome */
-    -o-animation: fadein 5s; /* Opera */
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
 }
 
 @keyframes fadein {
@@ -146,13 +146,13 @@ body:before, body:after {
 	width: 100%;
 	height: 100%;	
 	opacity: .2;
-			-webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 
-    animation: fadein 5s;
-    -moz-animation: fadein 5s; /* Firefox */
-    -webkit-animation: fadein 5s; /* Safari and Chrome */
-    -o-animation: fadein 5s; /* Opera */
+	animation: fadein 5s;
+	-moz-animation: fadein 5s; /* Firefox */
+	-webkit-animation: fadein 5s; /* Safari and Chrome */
+	-o-animation: fadein 5s; /* Opera */
 }
 
 @keyframes fadein {
@@ -192,8 +192,8 @@ body:before, body:after {
 
 
 .credits {
-	  margin-left: -600px;
-  margin-right: -600px;
+	margin-left: -600px;
+	margin-right: -600px;
 }
 
 .apps .imagewraps {
@@ -227,6 +227,7 @@ a {
 }
 
 a:hover {
+	text-decoration: underline;
 }
 
 a:focus {
@@ -302,39 +303,13 @@ footer {
 .over {
 	display: block;
 	content: "";
-  height: 6%;
-  margin-top: -6%;
-  -ms-transform: rotate(1deg);
+	height: 6%;
+	margin-top: -6%;
+	-ms-transform: rotate(1deg);
 	-webkit-transform: rotate(1deg);
 	transform: rotate(1deg);
 	width: 114%;
-  margin-left: -8%;
-}
-
-.mainwrap {
-	height: 123%;
-	margin-top: -5%;
-  z-index: 2;
-  position: relative;
-  -ms-transform: rotate(-1deg);
-	-webkit-transform: rotate(-1deg);
-	transform: rotate(-1deg);
-}
-
-.main {
-  height: 100%;
-  clear: both;
-  background: url('images/small-steps.png') repeat-y top left, url('images/small-steps.png') repeat-y right 100px;
-  background-size: 1em, 1.85em;
-  opacity: .8;
-}
-
-.content {
-	width: 60%;
-	padding: 100px 0 0 40px;
-  -ms-transform: rotate(1deg);
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
+	margin-left: -8%;
 }
 
 .triangle {
@@ -353,6 +328,26 @@ footer {
   opacity: .8;
 }
 
+.mainwrap {
+	height: 123%;
+	margin-top: -5%;
+	z-index: 2;
+	position: relative;
+	-ms-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+.main {
+	height: 100%;
+	clear: both;
+	background: url('images/small-steps.png') repeat-y top left, url('images/small-steps.png') repeat-y right 100px;
+	background-size: 1em, 1.85em;
+	opacity: .8;
+	padding-top: 100px;
+	padding-left: 40px;
+}
+
 .main h1 {
   font-size: 1.2rem;
   text-align: left;
@@ -363,6 +358,14 @@ footer {
   margin-bottom: 20px;
 }
 
+.work {
+	width: 60%;
+	padding: 40px 0 0 0px;
+	-ms-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
+
+}
 
 
 ul.links {
@@ -395,10 +398,6 @@ ul.links {
 #ok7:hover { display: flex !important; }
 #ok8:hover { display: flex !important; }
 
-ul.links li:first-child { 
-	margin-top: 26px; 
-}
-
 ul.links h4 {
   margin-left: 24px;
   line-height: 40px;
@@ -419,16 +418,23 @@ ul.links h5 {
 ul.otherside {
   list-style-type: none;
 	text-align: right;
+	width: 220px;
 }
+
+ul.otherside li a.andrew {
+	display:flex;
+}
+
+
 
 ul.otherside li a {
 	display: none;
 	text-align: center;
 }
 
-ul.otherside .thumbimg {
+ul.otherside img.thumbimg {
 	width: 100%;
-	max-width: 300px;
+	max-width: 200px;
 	height: 100%;
 }
 
@@ -443,7 +449,7 @@ ul.otherside h5 {
 }
 
 .ml120 {
-	padding-left: 120px;
+	/*padding-left: 240px;*/
 }
 
 /*
@@ -498,7 +504,11 @@ ul.otherside li:nth-child(9) { margin-right: 184px; }						TRASH?*/
 	}
 
 	.main {
-		padding-top: 0;
+		padding-top: 78px;
+	}
+
+	.work {
+		padding-top: 20px;
 	}
 
 	#thing {

@@ -66,6 +66,7 @@
 
 			grained("#thing2", options);
 
+			$('.links').hover(function() { $('.andrew').css('display','none'); }, function(){ $('.andrew').css('display','flex'); });
 			$('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
 			$('#yo1').hover(function() { $('#ok1').css('display','flex'); }, function(){ $('#ok1').css('display','none'); });
 			$('#yo2').hover(function() { $('#ok2').css('display','flex'); }, function(){ $('#ok2').css('display','none'); });
@@ -79,8 +80,8 @@
 			var card = $(".thing, .thingwrap2");
 
 			$(document).on("mousemove",function(e) {  
-			  var ax = -($(window).innerWidth()/2- e.pageX)/20;
-			  var ay = ($(window).innerHeight()/2- e.pageY)/10;
+			  var ax = -($(window).innerWidth()/8- e.pageX)/7;
+			  var ay = ($(window).innerHeight()/10- e.pageY)/5;
 			  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
 			});
 
@@ -100,10 +101,22 @@
 	<div id="trispeed" class="triangle animated fadeInUp"></div>
 	<div class="mainwrap">
 		<div id="topbarspeed" class="main animated fadeInUp">
-				<div class="content flex justify-start" style="overflow: hidden">
+				<h1>Hi, my name is Andrew and below is some of my recent work..</h1>
+				<div class="work flex justify-start" style="overflow: hidden">
+						
+						<ul class="otherside flex">
+							<li class="flex"><a class="flex flexcol justify-start ml120 andrew" href=""><img src="images/422v2.png" class="thumbimg"></a></li>
+							<li class="flex"><a id="ok" class="flex flexcol justify-start ml120" href="http://makeschool.com"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / CSS</h5></a></li>
+							<li class="flex"><a id="ok1" class="flex flexcol justify-start ml120" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561"><img src="images/thumbs/mshome.png" class="thumbimg"><h5>Creative / Production</h5></a></li>
+							<li class="flex"><a id="ok2" class="flex flexcol justify-start ml120" href="https://fart.watch/"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
+							<li class="flex"><a id="ok3" class="flex flexcol justify-start ml120" href="http://hipster.domains"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS</h5></a></li>
+							<li class="flex"><a id="ok4" class="flex flex-col justify-start ml120" href="https://tripbright.com/"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
+							<li class="flex"><a id="ok5" class="flex flexcol justify-start ml120" href="http://mailform.io"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / Market</h5></a></li>
+							<li class="flex"><a id="ok6" class="flex flexcol justify-start ml120" href="http://watchpop.com"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / Maketing</h5></a></li>
+							<li class="flex"><a id="ok7" class="flex flexcol justify-start ml120" href="http://videotap.es"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
+							<li class="flex"><a id="ok8" class="flex flexcol justify-start ml120" href="http://basscrib.com"><img src="images/thumbs/mshome.png" class="thumbimg"><h5>Design / Build</h5></a></li>
+						</ul>
 					<ul class="links">
-						<h1>Andrew's Work:</h1>
-
 						<li id="yo"><a href="http://makeschool.com"><h4>Make School ></h4></a></li>
 						<li id="yo1"><a href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561"><h4>MakeGamesWithUs ></h4></a></li>
 						<li id="yo2"><a href="https://fart.watch/"><h4>Fart Watch ></h4></a></li>
@@ -116,17 +129,6 @@
 						<!-- <li><a id="yo2" href="https://cler.gy/" target="_blank"><h4>what??idk</h4></a></li> -->
 					</ul>
 
-					<ul class="otherside flex">
-						<li class="flex"><a id="ok" class="flex justify-start ml120" href="http://makeschool.com"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / CSS</h5></a></li>
-						<li class="flex"><a id="ok1" class="flex justify-start ml120" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561"><img src="images/thumbs/mshome.png" class="thumbimg"><h5>Creative / Production</h5></a></li>
-						<li class="flex"><a id="ok2" class="flex justify-start ml120" href="https://fart.watch/"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
-						<li class="flex"><a id="ok3" class="flex justify-start ml120" href="http://hipster.domains"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS</h5></a></li>
-						<li class="flex"><a id="ok4" class="flex justify-start ml120" href="https://tripbright.com/"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
-						<li class="flex"><a id="ok5" class="flex justify-start ml120" href="http://mailform.io"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / Market</h5></a></li>
-						<li class="flex"><a id="ok6" class="flex justify-start ml120" href="http://watchpop.com"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / Maketing</h5></a></li>
-						<li class="flex"><a id="ok7" class="flex justify-start ml120" href="http://videotap.es"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
-						<li class="flex"><a id="ok8" class="flex justify-start ml120" href="http://basscrib.com"><img src="images/thumbs/mshome.png" class="thumbimg"><h5>Design / Build</h5></a></li>
-					</ul>
 				</div>
 		</div>
 	</div>
