@@ -359,7 +359,6 @@ footer {
 }
 
 .work {
-	width: 60%;
 	padding: 40px 0 0 0px;
 	-ms-transform: rotate(1deg);
 	-webkit-transform: rotate(1deg);
@@ -369,6 +368,8 @@ footer {
 
 
 ul.links {
+  padding-left: 54px;
+  min-width: 200px;
 	/* COOL TEXT FOR WEBKIT BROWSERS
 	background: -webkit-repeating-linear-gradient(top, #FF8100, #9EF043);
   background: repeating-linear-gradient(top, #FF8100, #9EF043);
@@ -399,7 +400,6 @@ ul.links {
 #ok8:hover { display: flex !important; }
 
 ul.links h4 {
-  margin-left: 24px;
   line-height: 40px;
 	font-size: .8rem;
   text-transform: uppercase;
@@ -418,14 +418,22 @@ ul.links h5 {
 ul.otherside {
   list-style-type: none;
 	text-align: right;
-	width: 220px;
+	padding-left: 80px;
+	padding-right: 90px;
+	width: 100%;
 }
 
 ul.otherside li a.andrew {
 	display:flex;
 }
 
+ul.face {
+	max-width: 200px;
+}
 
+ul.face img, ul.otherside img {
+	width: 100%;
+}
 
 ul.otherside li a {
 	display: none;
@@ -434,7 +442,6 @@ ul.otherside li a {
 
 ul.otherside img.thumbimg {
 	width: 100%;
-	max-width: 200px;
 	height: 100%;
 }
 
@@ -522,5 +529,38 @@ ul.otherside li:nth-child(9) { margin-right: 184px; }						TRASH?*/
 }
 
 
+
+p.type {
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
 
 

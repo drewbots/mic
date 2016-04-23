@@ -25,6 +25,10 @@
   -webkit-flex-direction: column;
 }
 
+.wrapf {
+	flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
 	.flexcol-mobile {
 		flex-direction: column;
