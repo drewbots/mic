@@ -35,7 +35,7 @@
 		
 
 			$(document).ready(function(){
-				
+
 			    // $('html').animate({scrollTop:600}, 1);
 			    // $('body').animate({scrollTop:600}, 1);
 			    // $('html').animate({scrollLeft:600}, 1);
@@ -66,16 +66,15 @@
 
 			grained("#thing2", options);
 
-			$('#yo').hover(function() { $('#ok').css('display','block'); }, function(){ $('#ok').css('display','none'); });
-			$('#yo1').hover(function() { $('#ok1').css('display','block'); }, function(){ $('#ok1').css('display','none'); });
-			$('#yo2').hover(function() { $('#ok2').css('display','block'); }, function(){ $('#ok2').css('display','none'); });
-			$('#yo3').hover(function() { $('#ok3').css('display','block'); }, function(){ $('#ok3').css('display','none'); });
-			$('#yo4').hover(function() { $('#ok4').css('display','block'); }, function(){ $('#ok4').css('display','none'); });
-			$('#yo5').hover(function() { $('#ok5').css('display','block'); }, function(){ $('#ok5').css('display','none'); });
-			$('#yo6').hover(function() { $('#ok6').css('display','block'); }, function(){ $('#ok6').css('display','none'); });
-			$('#yo7').hover(function() { $('#ok7').css('display','block'); }, function(){ $('#ok7').css('display','none'); });
-			$('#yo8').hover(function() { $('#ok8').css('display','block'); }, function(){ $('#ok8').css('display','none'); });
-		
+			$('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
+			$('#yo1').hover(function() { $('#ok1').css('display','flex'); }, function(){ $('#ok1').css('display','none'); });
+			$('#yo2').hover(function() { $('#ok2').css('display','flex'); }, function(){ $('#ok2').css('display','none'); });
+			$('#yo3').hover(function() { $('#ok3').css('display','flex'); }, function(){ $('#ok3').css('display','none'); });
+			$('#yo4').hover(function() { $('#ok4').css('display','flex'); }, function(){ $('#ok4').css('display','none'); });
+			$('#yo5').hover(function() { $('#ok5').css('display','flex'); }, function(){ $('#ok5').css('display','none'); });
+			$('#yo6').hover(function() { $('#ok6').css('display','flex'); }, function(){ $('#ok6').css('display','none'); });
+			$('#yo7').hover(function() { $('#ok7').css('display','flex'); }, function(){ $('#ok7').css('display','none'); });
+			$('#yo8').hover(function() { $('#ok8').css('display','flex'); }, function(){ $('#ok8').css('display','none'); });
 
 			var card = $(".thing, .thingwrap2");
 
@@ -101,30 +100,32 @@
 	<div id="trispeed" class="triangle animated fadeInUp"></div>
 	<div class="mainwrap">
 		<div id="topbarspeed" class="main animated fadeInUp">
-				<div class="content" style="overflow: hidden">
+				<div class="content flex justify-start" style="overflow: hidden">
 					<ul class="links">
 						<h1>Andrew's Work:</h1>
-						<li><a id="yo" href="http://makeschool.com"><h4>Make School</h4></a></li>
-						<li><a id="yo1" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561"><h4>MakeGamesWithUs</h4></a></li>
-						<li><a id="yo2" href="http://fart.watch"><h4>Fart Watch</h4></a></li>
-						<!-- <li><a id="yo2" href="https://cler.gy/" target="_blank"><h4>Tripbright</h4></a></li> -->
-						<li><a id="yo3" href="http://hipster.domains"><h4>Hipster Domains</h4></a></li>
-						<li><a id="yo4" href="https://tripbright.com/"><h4>Tripbright</h4></a></li>
-						<li><a id="yo5" href="https://mailform.io/"><h4>Mailform</h4></a></li>
-						<li><a id="yo6" href="http://watchpop.com"><h4>WatchPop</h4></a></li>
-						<li><a id="yo7" href="http://videotap.es"><h4>Videotap.es</h4></a></li>
-						<li><a id="yo8" href="http://basscrib.com"><h4>BassCrib</h4></a></li>
+
+						<li id="yo"><a href="http://makeschool.com"><h4>Make School ></h4></a></li>
+						<li id="yo1"><a href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561"><h4>MakeGamesWithUs ></h4></a></li>
+						<li id="yo2"><a href="https://fart.watch/"><h4>Fart Watch ></h4></a></li>
+						<li id="yo3"><a href="http://hipster.domains"><h4>Hipster Domains ></h4></a></li>
+						<li id="yo4"><a href="https://tripbright.com/"><h4>Tripbright ></h4></a></li>
+						<li id="yo5"><a href="https://mailform.io/"><h4>Mailform ></h4></a></li>
+						<li id="yo6"><a href="https://watchpop.com/"><h4>WatchPop ></h4></a></li>
+						<li id="yo7"><a href="https://videotap.es/"><h4>Videotap.es ></h4></a></li>
+						<li id="yo8"><a href="https://basscrib.com/"><h4>BassCrib ></h4></a></li>
+						<!-- <li><a id="yo2" href="https://cler.gy/" target="_blank"><h4>what??idk</h4></a></li> -->
 					</ul>
-					<ul class="otherside">
-						<li><a id="ok"><h5>Design / CSS</h5></a></li>
-						<li><a id="ok1"><h5>Creative / Production</h5></a></li>
-						<li><a id="ok2"><h5>Design / Brand / Viral</h5></a></li>
-						<li><a id="ok3"><h5>CSS</h5></a></li>
-						<li><a id="ok4" ><h5>CSS / UX / Brand (wip)</h5></a></li>
-						<li><a id="ok5" ><h5>CSS / UX / Brand (wip)</h5></a></li>
-						<li><a id="ok6"><h5>Design / Market</h5></a></li>
-						<li><a id="ok7"><h5>CSS</h5></a></li>
-						<li><a id="ok8"><h5>Design / Build</h5></a></li>
+
+					<ul class="otherside flex">
+						<li class="flex"><a id="ok" class="flex justify-start ml120" href="http://makeschool.com"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / CSS</h5></a></li>
+						<li class="flex"><a id="ok1" class="flex justify-start ml120" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561"><img src="images/thumbs/mshome.png" class="thumbimg"><h5>Creative / Production</h5></a></li>
+						<li class="flex"><a id="ok2" class="flex justify-start ml120" href="https://fart.watch/"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
+						<li class="flex"><a id="ok3" class="flex justify-start ml120" href="http://hipster.domains"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS</h5></a></li>
+						<li class="flex"><a id="ok4" class="flex justify-start ml120" href="https://tripbright.com/"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
+						<li class="flex"><a id="ok5" class="flex justify-start ml120" href="http://mailform.io"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / Market</h5></a></li>
+						<li class="flex"><a id="ok6" class="flex justify-start ml120" href="http://watchpop.com"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>Design / Maketing</h5></a></li>
+						<li class="flex"><a id="ok7" class="flex justify-start ml120" href="http://videotap.es"><img src="images/thumbs/Recap mockup.png" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
+						<li class="flex"><a id="ok8" class="flex justify-start ml120" href="http://basscrib.com"><img src="images/thumbs/mshome.png" class="thumbimg"><h5>Design / Build</h5></a></li>
 					</ul>
 				</div>
 		</div>
