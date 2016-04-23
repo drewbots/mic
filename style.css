@@ -23,7 +23,7 @@ body {
   overflow: hidden;
   height: 100%;
   margin: 0;
-  font-family: 'anonymous-pro';
+  font-family: 'anonymous-pro', monospace;
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
