@@ -418,9 +418,11 @@ ul.links h5 {
 ul.otherside {
   list-style-type: none;
 	text-align: right;
-	padding-left: 80px;
 	padding-right: 90px;
 	width: 100%;
+	-ms-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
 }
 
 ul.otherside li a.andrew {
@@ -438,6 +440,7 @@ ul.face img, ul.otherside img {
 ul.otherside li a {
 	display: none;
 	text-align: center;
+	padding-left: 80px;
 }
 
 ul.otherside img.thumbimg {
