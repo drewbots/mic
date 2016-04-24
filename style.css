@@ -12,6 +12,51 @@
 
 html,body,span,h1,h2,h3,h4,h5,h6,p,a,ul,li {margin: 0; padding: 0;}
 
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ee;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:visited {
+	color: #551a8b;
+}
+
+p {
+  margin-bottom: 0.15em;
+  font-size: .8rem;
+}
+
+.mb4 {
+	margin-bottom: 80px;
+}
+
+/* -------INTRO------ */
+
+header {
+	margin: 0 auto 0 30px;
+}
+
+footer {
+	position: absolute;
+	bottom: -48px;
+	left: 20px;
+	font-size: 1rem;
+	color: #BADBBC;
+}
+
 html {
   overflow-y: auto;
   /*background: linear-gradient(#faf3e6, #FFFEFB);*/
@@ -218,43 +263,6 @@ body:before, body:after {
 	margin-bottom: 40px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus {
-  outline: none;
-}
-
-p {
-  margin-bottom: 0.15em;
-}
-
-.mb4 {
-	margin-bottom: 80px;
-}
-
-/* -------INTRO------ */
-
-header {
-	margin: 0 auto 0 30px;
-}
-
-footer {
-	position: absolute;
-	bottom: -48px;
-	left: 20px;
-	font-size: 1rem;
-	color: #BADBBC;
-}
 
 .page-wrapper {
   width: 101%;
@@ -279,8 +287,6 @@ footer {
   /* background-size: 40em; */
   display: block;
 }
-
-
 
 #topbarspeed {
   -webkit-animation-duration: 2s;
@@ -429,12 +435,17 @@ ul.otherside li a.andrew {
 	display:flex;
 }
 
-ul.face {
+.face {
 	max-width: 200px;
 }
 
-ul.face img, ul.otherside img {
+.face img, ul.otherside img {
 	width: 100%;
+	max-width: 660px;
+}
+
+.face img, ul.otherside img.smaller {
+	max-width: 460px;
 }
 
 ul.otherside li a {
@@ -452,10 +463,10 @@ ul.otherside h5 {
 	font-size: .6rem;
 	background: #444;
 	color: white;
-	padding: 0 2px 0 1px;
-	margin-left: 10px;
+	padding: 0 4px 0 4px;
 	height: 100%;
 	text-align: right;
+	display: inline-table;
 }
 
 .ml120 {
