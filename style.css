@@ -43,6 +43,10 @@ p {
 	margin-bottom: 80px;
 }
 
+.ml2 {
+	margin-left: 20px;
+}
+
 /* -------INTRO------ */
 
 header {
@@ -348,12 +352,14 @@ body:before, body:after {
 
 .main {
 	height: 100%;
+	width: 99%;
 	clear: both;
 	background: url('images/small-steps.png') repeat-y top left, url('images/small-steps.png') repeat-y right 100px;
 	background-size: 1em, 1.85em;
 	opacity: .8;
 	padding-top: 100px;
 	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .main h1 {
@@ -509,8 +515,13 @@ ul.otherside li:nth-child(9) { margin-right: 184px; }						TRASH?*/
   	-ms-transform: rotate(1deg);
 	-webkit-transform: rotate(1deg);
 	transform: rotate(1deg);
+	height: 94%;
 }
 
+.nonhome.mainwrap {
+	height: 122%;
+}
+ 
 .nonhome .main .apps h1 {
   overflow: auto;
   	-ms-transform: rotate(-1deg);
@@ -524,6 +535,11 @@ ul.otherside li:nth-child(9) { margin-right: 184px; }						TRASH?*/
 
 .nonhome .apps {
 	max-width: 1300px;
+}
+
+.altpagehead {
+	width: 96%;
+	margin: 20px 0 30px 0;
 }
 
 
