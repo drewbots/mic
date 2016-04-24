@@ -12,134 +12,84 @@
 	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
 	<meta name="robots" content="all">
 
+	<script src="https://use.typekit.net/lxk5mws.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
 	<!--[if lt IE 9]>
-	<script src="script/html5shiv.js"></script>
+		<script src="script/html5shiv.js"></script>
 	<![endif]-->
 
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="grained.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-<script type="text/javascript">//<![CDATA[
-window.onload=function(){
-var canvas = document.getElementById('canvas'),
-    ctx = canvas.getContext('2d');
+	<script type="text/javascript">//<![CDATA[
+		
 
-function resize() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
-resize();
-window.onresize = resize;
+			$(document).ready(function(){
 
-function noise(ctx) {
-    
-    var w = ctx.canvas.width,
-        h = ctx.canvas.height,
-        idata = ctx.createImageData(w, h),
-        buffer32 = new Uint32Array(idata.data.buffer),
-        len = buffer32.length,
-        i = 0;
+			    // $('html').animate({scrollTop:600}, 1);
+			    // $('body').animate({scrollTop:600}, 1);
+			    // $('html').animate({scrollLeft:600}, 1);
+			    // $('body').animate({scrollLeft:600}, 1);
+			
 
-    for(; i < len;)
-        buffer32[i++] = ((255 * Math.random())|0) << 24;
-    
-    ctx.putImageData(idata, 0, 0);
-}
+			var options = {
+			  "animate": true,
+			  "patternWidth": 162.39,
+			  "patternHeight": 120,
+			  "grainOpacity": 0.62,
+			  "grainDensity": 2.82,
+			  "grainWidth": 2.01,
+			  "grainHeight": 1.3
+			};
 
-var toggle = false;
+			grained("#thing", options);
 
-// added toggle to get 30 FPS instead of 60 FPS
-(function loop() {
-    toggle = !toggle;
-    if (toggle) {
-        requestAnimationFrame(loop);
-        return;
-    }
-    noise(ctx);
-    requestAnimationFrame(loop);
-})();
+			options = {
+			  "animate": true,
+			  "patternWidth": 162.39,
+			  "patternHeight": 120,
+			  "grainOpacity": 0.62,
+			  "grainDensity": 2.82,
+			  "grainWidth": 2.01,
+			  "grainHeight": 1.3
+			};
 
-var myElement = document.querySelector("#canvas");
-myElement.style.backgroundColor = "#00FF06";
+			grained("#thing2", options); 
 
-$('#yo').hover(function() {
-   $('#ok').css('display','block');
-},
-function(){
-	$('#ok').css('display','none');
-}
-);
+			var card = $(".thing, .thingwrap2");
 
-$('#yo1').hover(function() {
-   $('#ok1').css('display','block');
-},
-function(){
-	$('#ok1').css('display','none');
-}
-);
+			$(document).on("mousemove",function(e) {  
+			  var ax = -($(window).innerWidth()/8- e.pageX)/7;
+			  var ay = ($(window).innerHeight()/10- e.pageY)/5;
+			  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+			});
 
-$('#yo2').hover(function() {
-   $('#ok2').css('display','block');
-},
-function(){
-	$('#ok2').css('display','none');
-}
-);
+	});
 
-$('#yo3').hover(function() {
-   $('#ok3').css('display','block');
-},
-function(){
-	$('#ok3').css('display','none');
-}
-);
-
-$('#yo4').hover(function() {
-   $('#ok4').css('display','block');
-},
-function(){
-	$('#ok4').css('display','none');
-}
-);
-
-$('#yo5').hover(function() {
-   $('#ok5').css('display','block');
-},
-function(){
-	$('#ok5').css('display','none');
-}
-);
-
-$('#yo6').hover(function() {
-   $('#ok6').css('display','block');
-},
-function(){
-	$('#ok6').css('display','none');
-}
-);
-
-$('#yo7').hover(function() {
-   $('#ok7').css('display','block');
-},
-function(){
-	$('#ok7').css('display','none');
-}
-);
-
-$('#yo8').hover(function() {$('#ok8').css('display','block');}, function(){ $('#ok8').css('display','none');});
-
-}//]]> 
-
-</script>
+	</script>
 
 </head>
 
 <body class="nonhome">
 
 <div class="page-wrapper">
-
-	<section class="main">
-		<div class="apps">
-			<h1>Game Templates | UX / Design</h1>
+	
+	<div class="topbarwrap">
+		<div id="topbarspeed" class="topborder animated fadeInLeft"></div>
+	</div>
+	
+	<div class="mainwrap">
+	<div class="main">
+		<div class="apps mb4">
+			<div class="flex justify-w-space">
+				<h1>Game Templates | UX / Design</h1>
+				<h1><a href="/">&#60;home</a></h1>
+			</div>
 			<div class="imgrow flex justify-w-space-around align-center mb4">
 				<div class="imagewraps">
 					<img src="images/templates/lvlbased/Main Screen.png">
@@ -213,7 +163,7 @@ $('#yo8').hover(function() {$('#ok8').css('display','block');}, function(){ $('#
 
 		<div class="apps">
 			<h1>Student Games | UX / Creative Director / Producer</h1>
-			<h4>see published games <a id="yo1" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561">here</a></h1>
+			<h4>see published games <a id="yo1" target="_blank" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561">here</a></h4>
 			<div class="imgrow flex justify-w-space-around align-center mb4">
 				<div class="imagewraps">
 					<img src="images/apps/placethatpic/PlaceThatPic1.png">
@@ -395,18 +345,26 @@ $('#yo8').hover(function() {$('#ok8').css('display','block');}, function(){ $('#
 				</div>
 			</div>
 
+			<div class="flex justify-end mb4">
+				
+				<h1><a href="/">&#60;home</a> <a href="/">&#94;top</a></h1>
+			</div>
+
 
 		</div>
-	</section>
 
-	<footer></footer>
+	</div>
+	</div>
 
-</div>
-
-<canvas id="canvas"></canvas>
-
-
+		<div class="over">
+		<div id="botbarspeed" class="bottomborder animated fadeInRight"></div>
+	</div>
 
 </div>
+
+
+<div class="thingwrap"><div id="thing" class="thing"></div></div>
+<div class="thingwrap2"><div id="thing2" class="thing2"></div></div>
+
 </body>
 </html>

@@ -344,6 +344,8 @@ body:before, body:after {
 	transform: rotate(-1deg);
 }
 
+
+
 .main {
 	height: 100%;
 	clear: both;
@@ -504,7 +506,18 @@ ul.otherside li:nth-child(9) { margin-right: 184px; }						TRASH?*/
 
 .nonhome .main {
   overflow: auto;
+  	-ms-transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	transform: rotate(1deg);
 }
+
+.nonhome .main .apps h1 {
+  overflow: auto;
+  	-ms-transform: rotate(-1deg);
+	-webkit-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
 .nonhome .main:before {
 	position: absolute;
 }
