@@ -28,17 +28,15 @@
 	<script src="grained.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-	<script type="text/javascript">//<![CDATA[
+	<script type="text/javascript">
 		
+		$(document).ready(function(){
 
-			$(document).ready(function(){
-
-			    // $('html').animate({scrollTop:600}, 1);
-			    // $('body').animate({scrollTop:600}, 1);
-			    // $('html').animate({scrollLeft:600}, 1);
-			    // $('body').animate({scrollLeft:600}, 1);
+			// $('html').animate({scrollTop:600}, 1);
+			// $('body').animate({scrollTop:600}, 1);
+			// $('html').animate({scrollLeft:600}, 1);
+			// $('body').animate({scrollLeft:600}, 1);
 			
-
 			var options = {
 			  "animate": true,
 			  "patternWidth": 162.39,
@@ -63,7 +61,6 @@
 
 			grained("#thing2", options); 
 
-
 			$('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
 			$('#yo1').hover(function() { $('#ok1').css('display','flex'); }, function(){ $('#ok1').css('display','none'); });
 			$('#yo2').hover(function() { $('#ok2').css('display','flex'); }, function(){ $('#ok2').css('display','none'); });
@@ -74,6 +71,16 @@
 			$('#yo7').hover(function() { $('#ok7').css('display','flex'); }, function(){ $('#ok7').css('display','none'); });
 			$('#yo8').hover(function() { $('#ok8').css('display','flex'); }, function(){ $('#ok8').css('display','none'); });
 
+			$('#ok').hover(function() { $('#yo').css('text-decoration','underline'); }, function(){ $('#yo').css('text-decoration','none'); });
+			$('#ok1').hover(function() { $('#yo1').css('text-decoration','underline'); }, function(){ $('#yo1').css('text-decoration','none'); });
+			$('#ok2').hover(function() { $('#yo2').css('text-decoration','underline'); }, function(){ $('#yo2').css('text-decoration','none'); });
+			$('#ok3').hover(function() { $('#yo3').css('text-decoration','underline'); }, function(){ $('#yo3').css('text-decoration','none'); });
+			$('#ok4').hover(function() { $('#yo4').css('text-decoration','underline'); }, function(){ $('#yo4').css('text-decoration','none'); });
+			$('#ok5').hover(function() { $('#yo5').css('text-decoration','underline'); }, function(){ $('#yo5').css('text-decoration','none'); });
+			$('#ok6').hover(function() { $('#yo6').css('text-decoration','underline'); }, function(){ $('#yo6').css('text-decoration','none'); });
+			$('#ok7').hover(function() { $('#yo7').css('text-decoration','underline'); }, function(){ $('#yo7').css('text-decoration','none'); });
+			$('#ok8').hover(function() { $('#yo8').css('text-decoration','underline'); }, function(){ $('#yo8').css('text-decoration','none'); });
+
 			var card = $(".thing, .thingwrap2");
 
 			$(document).on("mousemove",function(e) {  
@@ -82,8 +89,7 @@
 			  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
 			});
 
-
-	});
+		});
 
 	</script>
 
@@ -91,22 +97,24 @@
 
 <body>
 
-<div class="page-wrapper">
-	<div class="topbarwrap">
-		<div id="topbarspeed" class="topborder animated fadeInLeft"></div>
-	</div>
-	<div id="trispeed" class="triangle animated fadeInUp"></div>
-	<div class="mainwrap">
-		<div id="topbarspeed" class="main animated fadeInUp">
+	<div class="page-wrapper">
+
+		<div class="topbarwrap">
+			<div id="topbarspeed" class="topborder animated fadeInLeft"></div>
+		</div>
+
+		<div id="trispeed" class="triangle animated fadeInUp"></div>
+
+		<div class="mainwrap">
+			<div id="topbarspeed" class="main animated fadeInUp">
 				<div class="work flex justify-start">
-						
-						<div class="face flex flexcol">
-							<img src="images/422v2.png">
-							<p>Andrew Slaughter</p>
-							<p><a href="mailto:slaughter.andrew@gmail.com">contact</a>
-							</p>
-						</div>
-						
+							
+					<div class="face flex flexcol">
+						<img src="images/422v2.png">
+						<p>Andrew Slaughter</p>
+						<p><a href="mailto:slaughter.andrew@gmail.com">contact</a></p>
+					</div>
+							
 					<ul class="links priority-flex-child">
 						<li id="yo"><a href="http://makeschool.com" target="_blank"><h4>Make School ></h4></a></li>
 						<li id="yo1"><a href="apps.html" target="_blank"><h4>MakeGamesWithUs ></h4></a></li>
@@ -117,34 +125,42 @@
 						<li id="yo5"><a href="https://mailform.io/" target="_blank"><h4>Mailform ></h4></a></li>
 						<li id="yo6"><a href="http://watchpop.com/" target="_blank"><h4>WatchPop ></h4></a></li>
 						<li id="yo8"><a href="http://basscrib.com/" target="_blank"><h4>BassCrib ></h4></a></li>
-						<!-- <li><a id="yo2" href="https://cler.gy/" target="_blank"><h4>what??idk</h4></a></li> -->
 					</ul>
 
-						<ul class="otherside flex wrapf">
-							<li class="flex"><a id="ok" class="flex flexcol justify-start ml120 linkimg" href="https://makeschool.com" target="_blank"><img src="images/thumbs/newms.gif" class="thumbimg"><h5>Design / CSS</h5></a></li>
-							<li class="flex"><a id="ok1" class="flex flexcol justify-start ml120 linkimg" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561" target="_blank"><img src="images/thumbs/dsf.gif" class="thumbimg"><h5>Creative / Production</h5></a></li>
-							<li class="flex"><a id="ok2" class="flex flexcol justify-start ml120 linkimg" href="https://fart.watch/" target="_blank"><img src="images/thumbs/fart.gif" class="thumbimg"><h5>Brand / Market / CSS</h5></a></li>
-							<li class="flex"><a id="ok3" class="flex flexcol justify-start ml120 linkimg" href="http://hipster.domains" target="_blank"><p class="type">hipster.domains<span>|</span></p><h5>CSS</h5></a></li>
-							<li class="flex"><a id="ok4" class="flex flexcol justify-start ml120 linkimg" href="https://tripbright.com/" target="_blank"><img src="images/thumbs/tb.gif" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
-							<li class="flex"><a id="ok7" class="flex flexcol justify-start ml120 linkimg" href="https://videotap.es" target="_blank"><img src="images/thumbs/heads.gif" class="thumbimg smaller"><h5>Art / CSS</h5></a></li>
-							<li class="flex"><a id="ok5" class="flex flexcol justify-start ml120 linkimg" href="https://mailform.io" target="_blank"><img src="images/thumbs/mailit.gif" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
-							<li class="flex"><a id="ok6" class="flex flexcol justify-start ml120 linkimg" href="http://watchpop.com" target="_blank"><img src="images/thumbs/pops.gif" class="thumbimg"><h5>Maker / Market</h5></a></li>
+					<ul class="otherside flex wrapf">
+								
+						<li class="flex"><a id="ok" class="flex flexcol justify-start ml120 linkimg" href="https://makeschool.com" target="_blank"><img src="images/thumbs/newms.gif" class="thumbimg"><h5>the worlds first product university<br>product / ux / css / git / adobe</h5></a></li>
+								
+						<li class="flex"><a id="ok1" class="flex flexcol justify-start ml120 linkimg" href="https://itunes.apple.com/us/developer/makegameswithus.com/id532039561" target="_blank"><img src="images/thumbs/dsf.gif" class="thumbimg"><h5>art and expirience for over 60 student games<br>creative / production</h5></a></li>
+								
+						<li class="flex"><a id="ok2" class="flex flexcol justify-start ml120 linkimg" href="https://fart.watch/" target="_blank"><img src="images/thumbs/fart.gif" class="thumbimg"><h5 class="mal">this app is a blast!<br>brand / marketing / css</h5></a></li>
+
+						<li class="flex"><a id="ok3" class="flex flexcol justify-start ml120 linkimg" href="http://hipster.domains" target="_blank"><p class="type">hipster.domains<span>|</span></p><h5 class="mt05 ml15">reviving one of our favorite sites on the web <br> CSS</h5></a></li>
+
+						<li class="flex"><a id="ok4" class="flex flexcol justify-start ml120 linkimg" href="https://tripbright.com/" target="_blank"><img src="images/thumbs/tb.gif" class="thumbimg"><h5 class="mal">CSS / UX / Brand (wip)</h5></a></li>
+								
+						<li class="flex"><a id="ok7" class="flex flexcol justify-start ml120 linkimg" href="https://videotap.es" target="_blank"><img src="images/thumbs/heads.gif" class="thumbimg smaller"><h5>Art / CSS</h5></a></li>
+								
+						<li class="flex"><a id="ok5" class="flex flexcol justify-start ml120 linkimg" href="https://mailform.io" target="_blank"><img src="images/thumbs/mailit.gif" class="thumbimg"><h5>CSS / UX / Brand (wip)</h5></a></li>
 							
-							<li class="flex"><a id="ok8" class="flex flexcol justify-start ml120 linkimg" href="http://basscrib.com" target="_blank"><img src="images/thumbs/1300tz.gif" class="thumbimg"><h5>Design / Build</h5></a></li>
-						</ul>
+						<li class="flex"><a id="ok6" class="flex flexcol justify-start ml120 linkimg" href="http://watchpop.com" target="_blank"><img src="images/thumbs/pops.gif" class="thumbimg"><h5>Maker / Market</h5></a></li>
+						
+						<li class="flex"><a id="ok8" class="flex flexcol justify-start ml120 linkimg" href="http://basscrib.com" target="_blank"><img src="images/thumbs/1300tz.gif" class="thumbimg"><h5>Design / Build</h5></a></li>
+
+					</ul>
 
 				</div>
+			</div>
 		</div>
-	</div>
-	<div class="over">
-		<div id="botbarspeed" class="bottomborder animated fadeInRight"></div>
-	</div>
-</div>
 
-<div class="thingwrap"><div id="thing" class="thing"></div></div>
-<div class="thingwrap2"><div id="thing2" class="thing2"></div></div>
+		<div class="over">
+			<div id="botbarspeed" class="bottomborder animated fadeInRight"></div>
+		</div>
 
-<div class="credits">hello hello</div>
+	</div>
+
+	<div class="thingwrap"><div id="thing" class="thing"></div></div>
+	<div class="thingwrap2"><div id="thing2" class="thing2"></div></div>
 
 </body>
 </html>
