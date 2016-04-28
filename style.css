@@ -669,6 +669,10 @@ span.blink {
 	  overflow: scroll;
 	  padding-bottom: 70px;
 	}
+	ul.links h4 {
+    line-height: 30px;
+    font-size: .7rem;
+  }
 }
 
 @media (max-width:650px) {
@@ -696,12 +700,10 @@ span.blink {
 	ul.links li:first-child {
 	    margin-top: 16px;
 	}
-
 	ul.links h4 {
-    line-height: 30px;
+    line-height: 32px;
     font-size: .6rem;
   }
-
 }
 
 @media (max-width: 600px) {
