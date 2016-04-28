@@ -132,10 +132,14 @@
 
 .yesshrink {  /* DEFAULT */
 	flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
 }
 
 .noshrink {
 	flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
 }
 
 /* flex - prioritize (or enlarge) the size of a child compared to other children */
@@ -150,6 +154,8 @@
 
 .single-flex-child {
 	flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
 }
 
 .double-flex-child {
