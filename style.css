@@ -42,6 +42,7 @@ body:before, body:after {
 body.nobackgroundmadness  {
 	overflow: auto;
 	height: auto;
+	position: relative;
 }
 
 ul {
@@ -685,7 +686,7 @@ span.blink {
 	}
 
 	.work {
-		margin-top: 20px;
+		padding-top: 20px;
 	}
 
 	#thing {
