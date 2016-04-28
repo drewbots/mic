@@ -20,6 +20,7 @@ html {
 }
 
 body {
+	overflow: auto;
   height: 100%;
   margin: 0;
   font-family: 'anonymous-pro', monospace;
@@ -63,29 +64,7 @@ p {
   font-size: .8rem;
 }
 
-.mb4 {
-	margin-bottom: 80px;
-}
 
-.ml2 {
-	margin-left: 20px;
-}
-
-.ml5 {
-	margin-left: 50px;	
-}
-
-.mt05 {
-	margin-top: 5px;
-}
-
-.ml15 {
-	margin-left: 15px;
-}
-
-.mal {
-	margin-left: auto;
-}
 
 .page-wrapper {
   width: 101%;
@@ -668,3 +647,30 @@ span.blink {
 }
 
 
+.mb4 {
+	margin-bottom: 80px;
+}
+
+.mt4 {
+	margin-top: 80px;
+}
+
+.ml2 {
+	margin-left: 20px;
+}
+
+.ml5 {
+	margin-left: 50px;	
+}
+
+.mt05 {
+	margin-top: 5px;
+}
+
+.ml15 {
+	margin-left: 15px;
+}
+
+.mal {
+	margin-left: auto;
+}
