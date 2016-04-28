@@ -672,11 +672,19 @@ span.blink {
 
 
 .mb4 {
+	margin-bottom: 40px;
+}
+
+.mb8 {
 	margin-bottom: 80px;
 }
 
 .mt4 {
-	margin-top: 80px;
+	margin-top: 40px;
+}
+
+.mt8 {
+	margin-bottom: 80px;
 }
 
 .ml2 {
