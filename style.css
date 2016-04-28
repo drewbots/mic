@@ -39,7 +39,7 @@ body:before, body:after {
 
 body.nobackgroundmadness  {
 	overflow: auto;
-	margin-bottom: 40px;
+	height: auto;
 }
 
 ul {
