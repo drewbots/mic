@@ -31,11 +31,10 @@
 
 			$(document).ready(function(){
 
-			    // $('html').animate({scrollTop:600}, 1);
-			    // $('body').animate({scrollTop:600}, 1);
-			    // $('html').animate({scrollLeft:600}, 1);
-			    // $('body').animate({scrollLeft:600}, 1);
-			
+			    $('.topofpage').click(function() {
+					  $("html, body").animate({ scrollTop: 0 }, "slow");
+					  return false;
+					});
 
 			var options = {
 			  "animate": true,
@@ -358,7 +357,7 @@
 				</div>
 
 				<div class="flex justify-end altpagehead mb4">
-					<h1 class="ml2"><a href="/">&#60;home</a> <a href="/">&#94;top</a></h1>
+					<h1 class="ml2"><a href="/">&#60;home</a> <a href="#" class="topofpage">&#94;top</a></h1>
 				</div>
 
 			</div>
