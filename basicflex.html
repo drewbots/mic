@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>basicflex | simple flexbox rules</title>
+
+	<link rel="stylesheet" media="screen" href="style.css">
+	<link rel="stylesheet" media="screen" href="flexgrid.css">
+	<link rel="stylesheet" media="screen" href="basicflex.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andrew Slaughter">
+	<meta name="description" content="This method uses really simple CSS and several media querries to scale the size of the images precisely.">
+	<meta name="robots" content="all">
+
+	<script src="https://use.typekit.net/lxk5mws.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="script/html5shiv.js"></script>
+	<![endif]-->
+
+	<script src="grained.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">//<![CDATA[
+		
+
+			$(document).ready(function(){
+
+			    // $('html').animate({scrollTop:600}, 1);
+
+	});
+
+	</script>
+
+</head>
+
+<body class="nonhome remove">
+		
+		<div class="plainwrap">
+			<div class="mb4">
+					
+				<div class="flex justify-w-space altpagehead">
+					<div class="plainheader">
+						<h1>basicflex is a set of css rules to wrestle flexbox</h1>
+						<p>included are the most commonly used rules for responsive web design</p>
+						<p><a href="https://codepen.io/turtlepower/pen/GZYpwY" target="_blank"><b>download</b></a> / <a href="https://codepen.io/turtlepower/pen/GZYpwY" target="_blank">codepen</a></p>
+					</div>
+					<div>
+						<h1 class="topright ml2"><a href="/">&#60;home</a></h1>
+						<h1 class="topright ml2"><a href="/">see flexbox grid&#62;</a></h1>
+					</div>
+				</div>
+
+<br><br>
+
+<h1 class="plainheader">Examples:</h1>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.flex</h3>
+			<h3 class="soft">display: flex;</h3>
+		</div>
+		<p>&lt;div class="flex"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.flex-col</h3>
+			<h3 class="soft">flex-direction: column;</h3>
+		</div>
+		<p>&lt;div class="flex flex-col"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex flex-col">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.justify-end</h3>
+			<h3 class="soft">justify-content: flex-end;</h3>
+		</div>
+		<p>&lt;div class="flex justify-end"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex justify-end">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.justify-center</h3>
+			<h3 class="soft">justify-content: center;</h3>
+		</div>
+		<p>&lt;div class="flex justify-center"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex justify-center">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.justify-w-space</h3>
+			<h3 class="soft">justify-content: space-between;</h3>
+		</div>
+		<p>&lt;div class="flex justify-w-space"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex justify-w-space">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.justify-w-space-around</h3>
+			<h3 class="soft">justify-content: space-around;</h3>
+		</div>		<p>&lt;div class="flex justify-w-space-around"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex justify-w-space-around">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.align-center</h3>
+			<h3 class="soft">align-items: center;</h3>
+		</div>
+		<p>&lt;div class="flex align-center"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex align-center">
+		<div class="sq"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.priority-flex-child</h3>
+			<h3 class="soft">flex: 1 0 auto;</h3>
+		</div>
+		<p>&lt;div class="flex"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq priority-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex">
+		<div class="sq priority-flex-child"></div>
+		<div class="sq lt"></div>
+		<div class="sq lter"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.single-flex-child</h3>
+			<h3 class="soft">flex: 1 0 auto;</h3>
+		</div>
+		<p>&lt;div class="flex"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq single-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex">
+		<div class="sq single-flex-child"></div>
+		<div class="sq lt single-flex-child"></div>
+		<div class="sq lter single-flex-child"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.double-flex-child<br>.single-flex-child</h3>
+			<h3 class="soft">flex: 2 0 auto;<br>flex: 1 0 auto;</h3>
+		</div>
+		<p>&lt;div class="flex"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq double-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt single-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter single-flex-child"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex">
+		<div class="sq double-flex-child"></div>
+		<div class="sq lt single-flex-child"></div>
+		<div class="sq lter single-flex-child"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.half-flex-child<br>.flex-wrap</h3>
+			<h3 class="soft">flex: 1 0 50%;<br>flex-wrap: wrap;</h3>
+		</div>
+		<p>&lt;div class="flex flex-wrap"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq half-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt half-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter half-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq half-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt half-flex-child"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter half-flex-child"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex flex-wrap">
+		<div class="sq half-flex-child"></div>
+		<div class="sq lt half-flex-child"></div>
+		<div class="sq lter half-flex-child"></div>
+		<div class="sq half-flex-child"></div>
+		<div class="sq lt half-flex-child"></div>
+		<div class="sq lter half-flex-child"></div>
+	</div>
+</div>
+
+<div class="codetext flex flex-col-mobile-840">
+	<div class="flex flex-col-mobile-600">
+		<div>
+			<h3>.half-flex-child<br>.half-flex-child-mobile<br>.flex-wrap<br>.align-lines-center</h3>
+			<h3 class="soft">flex: 1 0 50%;<br>flex: 0 1 100%;<br>flex-wrap: wrap;<br>align-content: center;</h3>
+		</div>
+		<p>&lt;div class="flex flex-wrap align-lines-center"&gt;<br>
+			&nbsp&nbsp&lt;div class="sq half-flex-child half-flex-child-mobile"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lt half-flex-child half-flex-child-mobile"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq lter half-flex-child half-flex-child-mobile"&gt;&lt;/div&gt;<br>
+			&nbsp&nbsp&lt;div class="sq half-flex-child half-flex-child-mobile"&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		</p>
+	</div>
+	<div class="showbox flex flex-wrap align-lines-center">
+		<div class="sq half-flex-child half-flex-child-mobile"></div>
+		<div class="sq lt half-flex-child half-flex-child-mobile"></div>
+		<div class="sq lter half-flex-child half-flex-child-mobile"></div>
+		<div class="sq half-flex-child half-flex-child-mobile"></div>
+		<div class="sq lt half-flex-child half-flex-child-mobile"></div>
+		<div class="sq lter half-flex-child half-flex-child-mobile"></div>
+	</div>
+</div>
+
+<br><br><br>
+
+<h1 class="plainheader">The CSS:</h1>
+<p class="plainheader"><a href="https://codepen.io/turtlepower/pen/GZYpwY" target="_blank"><b>download</b></a></p>
+<br><br>
+<p class="plainheader thecss">
+
+/*<br>
+ * basicflex.css <br>
+ * http://parksi.de/basicflex<br>
+ * Version - 1.0<br>
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT<br>
+ *<br>
+ * Copyright (c) 2016 Andrew Slaughter<br>
+ */<br>
+ <br>
+/*===  COMMON PARENT CONTAINER PROPERTIES  ===*/<br>
+<br>
+/* display - add flexbox  */<br>
+<br>
+.flex {<br>
+	display: -ms-flexbox;  /* TWEENER - IE 10 */<br>
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */<br>
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */<br>
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */<br>
+}<br>
+<br>
+/* flex-direction - use to specify the main axis or direction of flex, i.e. specifying rows or columns */<br>
+<br>
+.flex-row { /* DEFAULT */<br>
+  flex-direction: row;<br>
+  -webkit-flex-direction: row;<br>
+}<br>
+<br>
+.flex-col {<br>
+  flex-direction: column;<br>
+  -webkit-flex-direction: column;<br>
+}<br>
+<br>
+.flex-wrap {<br>
+	flex-wrap: wrap;<br>
+}<br>
+<br>
+@media (max-width: 768px) {<br>
+	.flex-col-mobile {<br>
+		flex-direction: column;<br>
+		-webkit-flex-direction: column;<br>
+	}<br>
+}<br>
+<br>
+/* align-items - use to align the cross axis, example: to vertically align elements in a row */<br>
+<br>
+.align-start {<br>
+  align-items: flex-start;<br>
+  -webkit-align-items: flex-start;<br>
+}<br>
+<br>
+.align-center {<br>
+  align-items: center;<br>
+  -webkit-align-items: center;<br>
+}<br>
+<br>
+.align-end {<br>
+  align-items: flex-end;<br>
+  -webkit-align-items: flex-end;<br>
+}<br>
+
+@media (max-width: 768px) {<br>
+	.align-center-mobile {<br>
+  	align-items: center;<br>
+  	-webkit-align-items: center;<br>
+}<br>
+}<br>
+<br>
+/* justify-content - use to align the main axis, example: to horizontally align elements in a row */<br>
+<br>
+.justify-start {  /* DEFAULT */<br>
+	justify-content: flex-start;<br>
+  -webkit-justify-content: flex-start;<br>
+}<br>
+<br>
+.justify-center {<br>
+	justify-content: center;<br>
+  -webkit-justify-content: center;<br>
+}<br>
+<br>
+.justify-end {<br>
+	justify-content: flex-end;<br>
+	-webkit-justify-content: flex-end;<br>
+}<br>
+<br>
+.justify-w-space {<br>
+	justify-content: space-between;<br>
+	-webkit-justify-content: space-between;<br>
+}<br>
+<br>
+.justify-w-space-around {<br>
+	justify-content: space-around;<br>
+	-webkit-justify-content: space-around;<br>
+}<br>
+<br>
+/* align-content - align mulitple rows */<br>
+<br>
+.align-lines-start {  /* DEFAULT */<br>
+	align-content: flex-start;<br>
+  -webkit-align-content: flex-start;<br>
+}<br>
+<br>
+.align-lines-center {<br>
+	align-content: center;<br>
+  -webkit-align-content: center;<br>
+}<br>
+<br>
+.align-lines-end {<br>
+	align-content: flex-end;<br>
+	-webkit-align-content: flex-end;<br>
+}<br>
+<br>
+.align-lines-w-space {<br>
+	align-content: space-between;<br>
+	-webkit-align-content: space-between;<br>
+}<br>
+<br>
+.align-lines-w-space-around {<br>
+	align-content: space-around;<br>
+	-webkit-align-content: space-around;<br>
+}<br>
+<br>
+.align-lines-stretch {<br>
+	align-content: stretch;<br>
+	-webkit-align-content: stretch;<br>
+}<br><br>
+<br><br>
+<br>
+/*===  COMMON CHILD CONTAINER RULES  ===*/<br>
+<br>
+/* flex-shrink - determines if div will shrink or hold its size */<br>
+<br>
+.yesshrink {  /* DEFAULT */<br>
+	flex-shrink: 1;<br>
+}<br>
+<br>
+.noshrink {<br>
+	flex-shrink: 0;<br>
+}<br>
+<br>
+/* flex - prioritize (or enlarge) the size of a child compared to other children */<br>
+<br>
+.priority-flex-child {<br>
+  flex: 1 0 auto;<br>
+  -webkit-flex: 1 0 auto;<br>
+  -ms-flex: 1 0 auto;<br>
+}<br>
+<br>
+/* flex - 2x enlarge the size of a child compared to other children */<br>
+<br>
+.single-flex-child {<br>
+	flex: 1 0 auto;<br>
+}<br>
+<br>
+.double-flex-child {<br>
+  flex: 2 0 auto;<br>
+  -webkit-flex: 2 0 auto;<br>
+  -ms-flex: 2 0 auto;<br>
+}<br>
+<br>
+/* flex - children are 50% wide */<br>
+<br>
+.half-flex-child {<br>
+  flex: 1 0 50%;<br>
+  -webkit-flex: 1 0 50%;<br>
+  -ms-flex: 1 0 50%;<br>
+}<br>
+<br>
+@media (max-width: 768px) {<br>
+  .half-flex-child-mobile {<br>
+    flex: 0 1 100%;<br>
+    -webkit-flex: 0 0 100%;<br>
+    -ms-flex: 0 0 100%;<br>
+  }<br>
+}<br>
+</p>
+
+
+
+
+
+			</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,4 +1,6 @@
 
+
+
 /*FLEX IMAGE GRID*/
 
 .fleximagegrid {
@@ -7,8 +9,6 @@
 	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 	flex-wrap: wrap;
-	margin: 0 auto;
-	max-width: 1100px;
 }
 
 .fleximagegrid a {
@@ -28,20 +28,15 @@
 
 .fleximagegrid img {
 	max-width: 80%;
-	max-height: 6rem;
+	max-height: 74%;
 }
 
 @media (max-width: 840px) {
 
 	.fleximagegrid a {
-		height: 6rem;
 		flex: 1 0 33.3333333333%;
   	-webkit-flex: 1 0 33.3333333333%;
   	-ms-flex: 1 0 33.3333333333%;
-	}
-
-	.fleximagegrid img {
-    max-height: 4rem;
 	}
 
 }
@@ -49,14 +44,9 @@
 @media (max-width: 550px) {
 
 	.fleximagegrid a {
-		height: 5rem;
 		flex: 1 0 50%;
   	-webkit-flex: 1 0 50%;
   	-ms-flex: 1 0 50%;
-	}
-
-	.fleximagegrid img {
-    max-height: 3rem;
 	}
 
 }
