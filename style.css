@@ -679,6 +679,12 @@ span.blink {
   }
 }
 
+@media (max-width:768px) {
+	.apps .imagewraps.half-flex-mobile-child {
+		margin-bottom: 20px;
+	}
+}
+
 @media (max-width:650px) {
 	ul.otherside { 
 		display: none;
