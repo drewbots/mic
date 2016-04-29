@@ -141,7 +141,7 @@ p {
 }
 
 .nonhome .main {
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 h1 {
@@ -211,15 +211,15 @@ ul.links {
   text-fill-color: transparent;*/
 }
 
-#ok:hover { display: flex !important; text-decoration: none;}
-#ok1:hover { display: flex !important; text-decoration: none;}
-#ok2:hover { display: flex !important; text-decoration: none;}
-#ok3:hover { display: flex !important; text-decoration: none;}
-#ok4:hover { display: flex !important; text-decoration: none;}
-#ok5:hover { display: flex !important; text-decoration: none;}
-#ok6:hover { display: flex !important; text-decoration: none;}
-#ok7:hover { display: flex !important; text-decoration: none;}
-#ok8:hover { display: flex !important; text-decoration: none;}
+#ok:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok1:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok2:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok3:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok4:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok5:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok6:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok7:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
+#ok8:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
 
 ul.links h4 {
   line-height: 40px;
@@ -245,10 +245,6 @@ ul.otherside {
 	-ms-transform: rotate(1deg);
 	-webkit-transform: rotate(1deg);
 	transform: rotate(1deg);
-}
-
-ul.otherside li a.andrew {
-	display:flex;
 }
 
 ul.otherside li a {
@@ -312,32 +308,35 @@ ul.otherside h5 {
 }
 
 .apps .imagewraps img.bigger {
-	max-width:100%;
+  max-width:100%;
 }
 .apps h1 {
-	margin-left: 40px;
-	margin-bottom: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 .nonhome #thing {
-	position: relative;
+  position: relative;
 }
 
 .nonhome .main {
   overflow: auto;
-  	-ms-transform: rotate(1deg);
-	-webkit-transform: rotate(1deg);
-	transform: rotate(1deg);
-	height: 94%;
+  height: 94%;
+}
+
+.nonhome .main .flex {
+  -ms-transform: rotate(1deg);
+  -webkit-transform: rotate(1deg);
+  transform: rotate(1deg);
 }
 
 .nonhome.mainwrap {
-	height: 122%;
+  height: 122%;
 }
  
 .nonhome .main .apps h1 {
   overflow: auto;
-  	-ms-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
 	-webkit-transform: rotate(-1deg);
 	transform: rotate(-1deg);
 }
@@ -429,7 +428,6 @@ span.blink {
 
 .codetext h3 {
 	width: 240px;
-	flex-shrink: 1;
 }
 
 .codetext h3.soft {
@@ -443,7 +441,6 @@ span.blink {
 .codetext p {
 	width: 420px;
 	margin-left: 40px;
-	flex-shrink: 0;
   letter-spacing: 0.03rem;
   line-height: 1.4;
 }
@@ -634,8 +631,11 @@ span.blink {
 
 @media (max-width: 1100px) {
 	.flex-col-mobile-600 {
-		flex-direction: column;
-		-webkit-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
 	}
 	.codetext p {
 		margin-left: 0;
@@ -644,7 +644,6 @@ span.blink {
 	.codetext h3 {
 		font-weight: 600;
 		width: 100%;
-		flex-shrink: 1;
 	}
 }
 
@@ -654,15 +653,16 @@ span.blink {
 		width: 100%;
 	}
 	.flex-col-mobile-840 {
-		flex-direction: column;
-		-webkit-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
 	}
 	.codetext h3 {
 		font-size: .9rem;
 	}
-	.codetext p {
-		flex-shrink: 1;
-	}
+
 	.face {
 		max-width: 100px;
 	}
