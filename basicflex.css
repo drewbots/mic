@@ -35,13 +35,6 @@
 	flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-	.flex-col-mobile {
-		flex-direction: column;
-		-webkit-flex-direction: column;
-	}
-}
-
 /* align-items - use to align the cross axis, example: to vertically align elements in a row */
 
 .align-start {
@@ -172,12 +165,30 @@
   -ms-flex: 1 0 50%;
 }
 
+
+
+/*===  MOBILE RULES  ===*/
+
 @media (max-width: 768px) {
-  .half-flex-child-mobile {
-    flex: 0 1 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-  }
+	
+	.onecol-flex-mobile {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	.onecol-flex-mobile-child {
+		flex: 0 1 100%;
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+	}
+
+	.half-flex-mobile-child {
+		flex: 0 1 50%;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+	}
+
+
 }
 
 

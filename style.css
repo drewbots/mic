@@ -140,6 +140,10 @@ p {
 	padding-right: 40px;
 }
 
+.nonhome .main {
+	padding-top: 20px;
+}
+
 h1 {
   font-size: 1.2rem;
   text-align: left;
