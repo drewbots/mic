@@ -15,7 +15,7 @@
 	<script src="https://use.typekit.net/lxk5mws.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-  <!--[if IE]>
+	<!--[if IE]>
     <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 
@@ -28,47 +28,20 @@
 
 	<script type="text/javascript">//<![CDATA[
 		
+		$(document).ready(function(){
 
-			$(document).ready(function(){
-
-			    $('.topofpage').click(function() {
-					  $(".main").animate({ scrollTop: 0 }, "slow");
-					  return false;
-					});
-
-			var options = {
-			  "animate": true,
-			  "patternWidth": 162.39,
-			  "patternHeight": 120,
-			  "grainOpacity": 0.62,
-			  "grainDensity": 2.82,
-			  "grainWidth": 2.01,
-			  "grainHeight": 1.3
-			};
-
-			grained("#thing", options);
-
-			options = {
-			  "animate": true,
-			  "patternWidth": 162.39,
-			  "patternHeight": 120,
-			  "grainOpacity": 0.62,
-			  "grainDensity": 2.82,
-			  "grainWidth": 2.01,
-			  "grainHeight": 1.3
-			};
-
-			grained("#thing2", options); 
-
-			var card = $(".thing, .thingwrap2");
-
-			$(document).on("mousemove",function(e) {  
-			  var ax = -($(window).innerWidth()/8- e.pageX)/7;
-			  var ay = ($(window).innerHeight()/10- e.pageY)/5;
-			  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+			$('.topofpage').click(function() {
+				$(".main").animate({ scrollTop: 0 }, "slow");
+					return false;
 			});
 
-	});
+			$(document).on("mousemove",function(e) {  
+				var ax = -($(window).innerWidth()/8- e.pageX)/7;
+				var ay = ($(window).innerHeight()/10- e.pageY)/5;
+				card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+			});
+
+		});
 
 	</script>
 
@@ -110,9 +83,9 @@
 					</div>
 
 					<div class="imgrow flex justify-around align-center mb8">
-            <div class="imagewraps">
-              <img src="images/templates/runner/game UI mockup.png">
-            </div>
+						<div class="imagewraps">
+							<img src="images/templates/runner/game UI mockup.png">
+						</div>
 
 						<div class="imagewraps">
 							<img src="images/templates/runner/more coins mockup.png">
@@ -368,7 +341,6 @@
 		</div>
 
 	</div>
-
 
 </body>
 </html>
