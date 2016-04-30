@@ -132,9 +132,7 @@ p {
   background: url('images/small-steps.png') repeat-y top left, url('images/small-steps.png') repeat-y right 100px;
   background-size: 1em, 1.85em;
   opacity: .8;
-  padding-top: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 68px 40px 0 68px;
 }
 
 .nonhome .main {
@@ -169,6 +167,11 @@ h3 {
   text-align: center;
 }
 
+.face p.name {
+  margin-top: 1px;
+  margin-left: -2px;
+}
+
 .bottomright {
   text-align: right;
   font-size: .9rem;
@@ -185,11 +188,13 @@ h3 {
 
 .face {
   max-width: 200px;
+  min-width: 136px;
 }
 
 .face img, ul.otherside img {
   width: 100%;
   max-width: 660px;
+  margin-left: -3px;
 }
 
 .face img, ul.otherside img.smaller {
@@ -197,8 +202,8 @@ h3 {
 }
 
 ul.links {
-  padding-left: 54px;
-  min-width: 200px;
+  padding-left: 4rem;
+  min-width: 214px;
 }
 
 #ok:hover { display: text-decoration: none; -ms-flexbox !important; display: -webkit-box !important; display: -webkit-flex !important; display: flex !important; }
@@ -653,20 +658,22 @@ span.blink {
     font-size: .9rem;
   }
 
-  .face {
-    max-width: 100px;
-  }
   .work {
     height: 100%;
+  }
+  ul.otherside li a {
+    padding-left: 0;
   }
   ul.links {
     overflow: scroll;
     padding-bottom: 70px;
+    padding-left: 2rem;
   }
   ul.links h4 {
     line-height: 30px;
     font-size: .7rem;
   }
+
 }
 
 @media (max-width:768px) {
@@ -679,24 +686,32 @@ span.blink {
   ul.otherside { 
     display: none;
   }
-
   .main:before {
     border-top: 0px solid #faf3e6;
     margin: 0em auto -7em -2%;
   }
-
   .main {
-    padding-top: 0px;
+    padding: 16px 40px 0 44px;
   }
-
+  .face {
+    max-width: 116px;
+    min-width: 100px;
+  }
+  .face p {
+    font-size: .6rem;
+  }
+  .face p.name {
+    margin-left: -3px;
+  }
   .work {
     padding-top: 20px;
   }
-
   #thing {
     position: static;
   }
+  ul.links {
 
+  }
   ul.links li:first-child {
       margin-top: 16px;
   }
@@ -716,6 +731,12 @@ span.blink {
   }
   .plainheader {
     margin-left: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .face p.name {
+    margin-left: -6px;
   }
 }
 
