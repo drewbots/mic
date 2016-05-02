@@ -198,13 +198,17 @@ h3 {
   min-width: 136px;
 }
 
-.face img, ul.otherside img {
+.face img {
+  margin-left: -3px;
+  width: 100%;
+} 
+
+ul.otherside img {
   width: 100%;
   max-width: 660px;
-  margin-left: -3px;
 }
 
-.face img, ul.otherside img.smaller {
+ul.otherside img.smaller {
   max-width: 460px;
 }
 
