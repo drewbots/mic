@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Parksi.de - a portfolio for Andrew Slaughter</title>
+
+	<link rel="stylesheet" media="screen" href="http://simpleflexcss.com/simpleflex.css">
+  <link rel="stylesheet" media="screen" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dave Shea">
+	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="robots" content="all">
+
+	<script src="https://use.typekit.net/lxk5mws.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="script/html5shiv.js"></script>
+	<![endif]-->
+
+	<script src="grained.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">//<![CDATA[
+		
+		$(document).ready(function(){
+
+			$('.topofpage').click(function() {
+				$(".main").animate({ scrollTop: 0 }, "slow");
+					return false;
+			});
+
+		});
+
+	</script>
+
+</head>
+
+<body class="nonhome">
+
+	<div class="page-wrapper">
+		
+		<div class="topbarwrap">
+			<div id="topbarspeed" class="topborder animated fadeInLeft"></div>
+		</div>
+		
+		<div class="mainwrap">
+			<div class="main">
+
+				<div class="flex justify-between altpagehead">
+					<div>
+						<h1>Tools / Dashboards / GUI</h1>
+					</div>
+					<h3 class="ml2"><a href="/">&#60;home</a></h3>
+				</div>
+
+
+				<div class="apps">
+
+					<div class="imgrow flex justify-around">
+						<div class="imagewraps">
+							<img src="images/thumbs/newms.gif">
+						</div>
+					</div>
+          <div class="imgrow flex justify-around">
+            <div class="imagewraps">
+              <img src="images/thumbs/mailform table.png">
+            </div>
+          </div>
+
+          <div class="imgrow flex onecol-flex-mobile justify-around">
+            <div class="imagewraps">
+              <img src="images/thumbs/tb2.png">
+            </div>
+            <div class="imagewraps">
+              <img src="images/thumbs/tb1.png">
+            </div>
+          </div>
+          <div class="imgrow flex onecol-flex-mobile justify-around">
+            <div class="imagewraps">
+              <img src="images/ux/wireframes/spell master gamescreen sketch.png">
+            </div>
+
+          </div>
+
+          
+
+				</div>
+
+				<div class="flex justify-end altpagehead mb8">
+					<h3 class="ml2"><a href="/">&#60;home</a> <a href="#" class="topofpage">&#94;top</a></h3>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="over">
+			<div id="botbarspeed" class="bottomborder animated fadeInRight"></div>
+		</div>
+
+	</div>
+
+</body>
+</html>
