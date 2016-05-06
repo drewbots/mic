@@ -68,7 +68,6 @@ a:visited {
 }
 
 p {
-  margin-bottom: 0.15em;
   font-size: .8rem;
 }
 
@@ -87,6 +86,8 @@ p {
   -ms-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);
+  z-index: 5;
+  position: relative;
 }
 
 .topborder {
@@ -134,10 +135,6 @@ p {
   background-size: 1em, 1.85em;
   opacity: .8;
   padding: 68px 40px 0 68px;
-}
-
-.nonhome .main {
-  padding-top: 40px;
 }
 
 h1 {
@@ -285,7 +282,7 @@ ul.otherside h5 {
   height: 100%;
   background: url('images/small-steps.png') repeat bottom;
   display: block;
-  opacity: .8;
+  opacity: 1;
 }
 
 .over {
@@ -296,21 +293,18 @@ ul.otherside h5 {
   transform: rotate(1deg);
   width: 114%;
   margin-left: -8%;
+  position: relative;
+  z-index: 4;
 }
 
 /*APPS PAGE*/
 
-.altpagehead {
-  width: 96%;
-  margin: 20px 0 30px 0;
-}
-
 .apps .imagewraps {
-  text-align: left;
+  text-align: center;
 }
 
 .apps .imagewraps img {
-  max-width:80%;
+  max-width:94%;
   border-top: 1px solid #eee;
   -moz-box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
@@ -336,17 +330,25 @@ ul.otherside h5 {
   margin-bottom: 40px;
 }
 
+.nonhome .main {
+  overflow: auto;
+  height: 98%;
+  padding-top: 40px;
+  margin-top: -1%;
+}
+
+.nonhome .altpagehead {
+  width: 96%;
+  margin: 20px auto 40px auto;
+  max-width: 1300px;
+}
+
 .nonhome #thing {
   position: relative;
 }
 
-.nonhome .main {
-  overflow: auto;
-  height: 94%;
-}
-
-.nonhome .main .imgrow.flex {
-
+.nonhome .over {
+  margin-top: -40px;
 }
 
 .nonhome .mainwrap {
@@ -368,12 +370,17 @@ ul.otherside h5 {
 
 .nonhome .apps {
   max-width: 1300px;
+  margin: 0 auto;
 }
 
 .imgrow {
   width: 96%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.imagewraps {
+  margin-bottom: 2rem;
 }
 
 /*HIPSTER TYPE*/
@@ -612,6 +619,13 @@ span.blink {
     }
 }
 
+.mb05 {
+  margin-bottom: 5px;
+}
+
+.mb1 {
+  margin-bottom: 10px;
+}
 
 .mb2 {
   margin-bottom: 20px;
@@ -711,8 +725,8 @@ span.blink {
 }
 
 @media (max-width:768px) {
-  .apps .imagewraps.half-flex-mobile-child {
-    margin-bottom: 20px;
+  .imagewraps {
+    margin-bottom: 1rem;
   }
 }
 
@@ -768,6 +782,11 @@ span.blink {
   }
   .plainheader {
     margin-left: 20px;
+  }
+  .half-flex-mobile-child {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
   }
 }
 
