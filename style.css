@@ -166,7 +166,7 @@ h3 {
 }
 
 .face p.name {
-  margin-top: 1px;
+  margin-top: 5px;
   margin-left: -2px;
 }
 
@@ -269,6 +269,10 @@ ul.otherside h5 {
   height: 100%;
   text-align: right;
   display: inline-table;
+}
+
+.linkimg:hover {
+  text-decoration: none;
 }
 
 /*BOTTOM BAR*/
