@@ -752,8 +752,8 @@ span.blink {
     padding: 16px 40px 0 44px;
   }
   .face {
-    max-width: 116px;
-    min-width: 100px;
+    max-width: 124px;
+    min-width: 122px;
   }
   .face p {
     font-size: .6rem;
@@ -805,7 +805,7 @@ span.blink {
     margin-left: -6px;
   }
   .main {
-      padding: 16px 16px 0 20px;
+      padding: 16px 16px 0 30px;
   }
   .onecol-flex-mobile-450 {
     -webkit-flex-direction: column;
