@@ -755,9 +755,6 @@ span.blink {
     max-width: 124px;
     min-width: 122px;
   }
-  .face p {
-    font-size: .6rem;
-  }
   .face p.name {
     margin-left: -3px;
   }
