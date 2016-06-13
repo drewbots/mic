@@ -723,7 +723,6 @@ span.blink {
     padding-left: 0;
   }
   ul.links {
-    overflow: scroll;
     padding-bottom: 70px;
     padding-left: 2rem;
   }
