@@ -31,18 +31,15 @@
 	<script src="grained.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-
 	<script type="text/javascript">
 		
-    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {alert('Its Safari');}
-
-
 		$(document).ready(function(){
 			
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
 
-//Now include js files
+      }
 
-
+      else {
 			var options = {
 				"animate": true,
 				"patternWidth": 162.39,
@@ -66,9 +63,7 @@
 			};
 
 			grained("#thing2", options); 
-
 }
-
 			$('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
 			$('#yo1').hover(function() { $('#ok1').css('display','flex'); }, function(){ $('#ok1').css('display','none'); });
 			$('#yo2').hover(function() { $('#ok2').css('display','flex'); }, function(){ $('#ok2').css('display','none'); });
