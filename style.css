@@ -10,20 +10,6 @@
   display: none; 
 }
 
-@-webkit-keyframes fontfix {
-    from { opacity: 1; }
-    to   { opacity: 1; }
-}
-
-/* we want Tagesschrift to apply to all h2's */
-.wf-loading p, .wf-loading h4 {
-  visibility: hidden;
-}
-.wf-active p, .wf-inactive p, .wf-active h4, .wf-inactive h4 {
-  visibility: visible;
-  font-family: 'anonymous-pro', monospace;
-}
-
 html,body,span,h1,h2,h3,h4,h5,h6,p,a,ul,li {margin: 0; padding: 0;}
 
 html {
@@ -44,11 +30,14 @@ body {
   letter-spacing: 0.05rem;
   line-height: 1.2em;
   color: #000000;
-    -webkit-animation-delay: 0.1s;
-    -webkit-animation-name: fontfix;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
+}
+
+.wf-loading h2 {
+  visibility: hidden;
+}
+.wf-active h2, .wf-inactive h2 {
+  visibility: visible;
+  font-family: 'anonymous-pro', monospace;
 }
 
 body:before, body:after {
@@ -63,7 +52,6 @@ body.nobackgroundmadness  {
   height: auto;
   position: relative;
 }
-
 
 ul {
   list-style-type: none;
