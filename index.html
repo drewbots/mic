@@ -35,6 +35,18 @@
 		
 		$(document).ready(function(){
 			
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ // some code..
+}else
+{
+  if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+
+  }
+  else {
+
+//Now include js files
+
+
 			var options = {
 				"animate": true,
 				"patternWidth": 162.39,
@@ -58,6 +70,8 @@
 			};
 
 			grained("#thing2", options); 
+
+}
 
 			$('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
 			$('#yo1').hover(function() { $('#ok1').css('display','flex'); }, function(){ $('#ok1').css('display','none'); });
