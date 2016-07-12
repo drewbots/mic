@@ -15,6 +15,15 @@
     to   { opacity: 1; }
 }
 
+/* we want Tagesschrift to apply to all h2's */
+.wf-loading p, .wf-loading h4 {
+  visibility: hidden;
+}
+.wf-active p, .wf-inactive p, .wf-active h4, .wf-inactive h4 {
+  visibility: visible;
+  font-family: 'anonymous-pro', monospace;
+}
+
 html,body,span,h1,h2,h3,h4,h5,h6,p,a,ul,li {margin: 0; padding: 0;}
 
 html {
