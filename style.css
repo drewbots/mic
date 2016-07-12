@@ -167,8 +167,10 @@ h3 {
 }
 
 .face p.name {
-  margin-top: 5px;
+  margin-top: 8px;
+  margin-bottom: 6px;
   margin-left: -2px;
+  line-height: 1.6;
 }
 
 .face p.bio {
@@ -808,7 +810,7 @@ span.blink {
 
 @media (max-width:450px) {
   .face p.name {
-    margin-left: -6px;
+    margin-left: 0px;
   }
   .main {
       padding: 16px 16px 0 32px;
