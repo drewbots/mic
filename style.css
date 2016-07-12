@@ -124,6 +124,10 @@ p {
   z-index: 2;
   height: 100%;
   position: relative;
+  -ms-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  moz-transform: rotate(0deg);
 }
 
 .main {
@@ -245,6 +249,7 @@ ul.otherside {
   -ms-transform: rotate(1deg);
   -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
+  moz-transform: rotate(0deg);
 }
 
 ul.otherside li a {
