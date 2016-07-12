@@ -192,7 +192,7 @@ h3 {
 
 .face {
   max-width: 200px;
-  min-width: 136px;
+  min-width: 156px;
 }
 
 .face img {
@@ -737,7 +737,7 @@ span.blink {
   .thing, .thingwrap, .thingwrap2, .thing2 {
     display: none;
   }
-  
+
   .imagewraps {
     margin-bottom: 1rem;
   }
