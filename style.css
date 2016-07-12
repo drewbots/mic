@@ -127,7 +127,7 @@ p {
   -ms-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);
-  moz-transform: rotate(0deg);
+  moz-transform: rotate(-1deg);
 }
 
 .main {
@@ -239,6 +239,10 @@ ul.links h5 {
   line-height: auto;
   font-size: .6rem;
   color: #ffffff;
+}
+
+.work {
+  moz-transform: rotate(0deg);
 }
 
 ul.otherside {
