@@ -734,6 +734,10 @@ span.blink {
 }
 
 @media (max-width:768px) {
+  .thing, .thingwrap, .thingwrap2, .thing2 {
+    display: none;
+  }
+  
   .imagewraps {
     margin-bottom: 1rem;
   }
