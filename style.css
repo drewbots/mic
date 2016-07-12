@@ -205,7 +205,7 @@ ul.otherside img {
   max-width: 660px;
 }
 
-ul.otherside img.smaller {
+ul.otherside .smaller img {
   max-width: 460px;
 }
 
@@ -256,7 +256,7 @@ ul.otherside li a {
   padding-left: 80px;
 }
 
-ul.otherside img.thumbimg {
+ul.otherside .thumbimg img {
   width: 100%;
 }
 
@@ -737,7 +737,7 @@ span.blink {
   .thing, .thingwrap, .thingwrap2, .thing2 {
     display: none;
   }
-  
+
   .imagewraps {
     margin-bottom: 1rem;
   }
