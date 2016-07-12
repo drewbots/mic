@@ -242,7 +242,7 @@ ul.links h5 {
 }
 
 .work {
-  -moz-transform: rotate(0deg);
+  -moz-transform: rotate(1deg);
 }
 
 ul.otherside {
@@ -253,7 +253,7 @@ ul.otherside {
   -ms-transform: rotate(1deg);
   -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
-  -moz-transform: rotate(0deg);
+  -moz-transform: rotate(1deg);
 }
 
 ul.otherside li a {
