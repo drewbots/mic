@@ -63,8 +63,10 @@
 			};
 
 			grained("#thing2", options); 
-}
-			$('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
+      
+      }
+			
+      $('#yo').hover(function() { $('#ok').css('display','flex'); }, function(){ $('#ok').css('display','none'); });
 			$('#yo1').hover(function() { $('#ok1').css('display','flex'); }, function(){ $('#ok1').css('display','none'); });
 			$('#yo2').hover(function() { $('#ok2').css('display','flex'); }, function(){ $('#ok2').css('display','none'); });
 			$('#yo3').hover(function() { $('#ok3').css('display','flex'); }, function(){ $('#ok3').css('display','none'); });
@@ -86,6 +88,12 @@
 			$('#ok8').hover(function() { $('#yo8').css('text-decoration','underline'); }, function(){ $('#yo8').css('text-decoration','none'); });
 			$('#ok9').hover(function() { $('#yo9').css('text-decoration','underline'); }, function(){ $('#yo9').css('text-decoration','none'); });
 
+      if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+
+      }
+
+      else {
+
 			var card = $(".thing, .thingwrap2");
 
 			$(document).on("mousemove",function(e) {  
@@ -93,6 +101,8 @@
 				var ay = ($(window).innerHeight()/10- e.pageY)/5;
 				card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
 			});
+
+      }
 
 		});
 
