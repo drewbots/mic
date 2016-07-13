@@ -67,7 +67,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a:focus {
+a:focus, span {
   outline: none;
 }
 
@@ -79,6 +79,27 @@ p {
   font-size: .8rem;
 }
 
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #d95b5b;
+  outline: 0; }
+
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  outline: 0;
+  text-decoration: none;
+  }
+  
 .page-wrapper {
   overflow: hidden;
   width: 100%;
@@ -175,7 +196,7 @@ h3 {
 }
 
 .face p.name {
-  margin-top: 9px;
+  margin-top: 10px;
   margin-bottom: 8px;
   margin-left: -2px;
   line-height: 1.6;
@@ -266,7 +287,7 @@ ul.otherside img.thumbimg {
   width: 100%;
 }
 
-ul.otherside img.thumbimg.outline {
+.outline {
   border:1px solid #f7f7f7;
 }
 
@@ -288,6 +309,10 @@ ul.otherside img {
 ul.links {
   padding-left: 4rem;
   min-width: 214px;
+}
+
+ul.mobilelinks {
+  display: none;
 }
 
 .imagesize3 {
@@ -783,6 +808,15 @@ span.blink {
   .imagewraps {
     margin-bottom: 1rem;
   }
+
+  ul.links {
+    display: none;
+  }
+
+  ul.mobilelinks {
+    display: block;
+  }
+
 }
 
 @media (max-width:650px) {
