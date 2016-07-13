@@ -114,11 +114,8 @@ button.close {
   margin-bottom: 20px;
 }
 .modal-body img, .modal-body p.type {
-  margin-bottom: 20px;
-}
-.modal-body img {
   width: 100%;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .modal-body a {
   text-align: right;
