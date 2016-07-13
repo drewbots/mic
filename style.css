@@ -502,10 +502,6 @@ span.blink {
   max-width: 1100px;
 }
 
-.plainheader {
-  margin-left: 50px;
-}
-
 .thecss {
   letter-spacing: 0.02rem;
   line-height: 1.2;
@@ -526,7 +522,7 @@ span.blink {
 }
 
 .codetext {
-  margin: 44px 50px 0px 50px;
+  margin: 0px 0px 44px 0px;
 }
 
 .codetext h3 {
@@ -875,9 +871,6 @@ span.blink {
   .codetext p {
     width: auto;
     font-size: .7rem;
-  }
-  .plainheader {
-    margin-left: 20px;
   }
   .half-flex-mobile-child {
     -ms-flex-preferred-size: 100%;
