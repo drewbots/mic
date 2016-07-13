@@ -35,7 +35,7 @@
 		$(document).ready(function(){
 
 			$('.topofpage').click(function() {
-				$(".main").animate({ scrollTop: 0 }, "slow");
+				$(".nonhome").animate({ scrollTop: 0 }, "slow");
 					return false;
 			});
 
@@ -49,44 +49,43 @@
 
 	<div class="page-wrapper">
 		
-		<div class="topbarwrap">
-			<div id="topbarspeed" class="topborder animated fadeInLeft"></div>
-		</div>
-		
 		<div class="mainwrap">
-			<div class="main">
 
-        <div class="flex justify-between altpagehead mb6">
-          <h1>Wireframes</h1>
-          <h3 class="ml2"><a href="/">&#60;home</a></h3>
+        <div class="flex justify-between altpagehead">
+          <div>
+            <h1>Wireframes</h1>
+            <p class="mb4">A few wireframes that I've managed to hold on to...</p>
+          </div>
+          <a href="/"><h3 class="ml2">&#60;home</h3></a>
         </div>
+
+			<div class="main">
 
         <div class="apps">
 
-          <p class="ml2 mb1">Let's Hang Out: a hangout scheduler</p>
-          <div class="imgrow flex justify-around mt3 mb2">
+          <p class="mb2">Let's Hang Out: a hangout scheduler</p>
+          <div class="imgrow flex justify-around mb2">
             <div class="imagewraps">
               <img class="ful" src="images/ux/wireframes/Lets hang out.png">
             </div>
           </div>
 
-
-          <p class="ml2 mb1">Puzzle/Level Game</p>
-					<div class="imgrow flex justify-around flex-wrap-mobile align-center mt3 mb2">
+          <p class="mb2">Puzzle/Level Game Template</p>
+					<div class="imgrow flex justify-around flex-wrap-mobile align-center mb2">
 						<div class="imagewraps half-flex-mobile-child">
 							<img src="images/ux/wireframes/level game wireframe-01.jpg">
 						</div>
 					</div>
 
-          <p class="ml2 mb05">Horizantal Runner</p>
-					<div class="imgrow flex justify-around onecol-flex-mobile flex-wrap-mobile align-center mt3 mb2">
+          <p class="mb2">Horizantal Runner Template</p>
+					<div class="imgrow flex justify-around onecol-flex-mobile flex-wrap-mobile align-center mb2">
 						<div class="imagewraps">
 							<img src="images/ux/wireframes/runner wire.jpg">
 						</div>
 					</div>
 
-          <p class="ml2 mb05">An iPad game</p>
-          <div class="imgrow flex justify-around onecol-flex-mobile align-center mt3 mb2">
+          <p class="mb2">An iPad game</p>
+          <div class="imgrow flex justify-around onecol-flex-mobile align-center mb2">
             <div class="imagewraps">
               <img src="images/ux/wireframes/spell master gamescreen sketch.png">
             </div>
@@ -98,8 +97,8 @@
             </div>
           </div>
 
-          <p class="ml2 mb1">Multiplayer</p>
-          <div class="imgrow flex justify-around flex-wrap-mobile align-center mt3 mb2">
+          <p class="mb2">Multiplayer Template</p>
+          <div class="imgrow flex justify-around flex-wrap-mobile align-center mb2">
             <div class="imagewraps half-flex-mobile-child">
               <img src="images/ux/wireframes/ghost.png">
             </div>
@@ -112,8 +111,9 @@
 
 				</div>
 
-        <div class="flex justify-between altpagehead mb6">
-          <h1>Wireframe to Website</h1>
+
+        <div class="flex justify-between sectionhead">
+          <h1>From Wireframe to Website</h1>
           <h3 class="ml2"><a href="#" class="topofpage">&#94;top</a></h3>
         </div>
 
@@ -142,7 +142,7 @@
         </div>
 
 
-        <div class="flex justify-between altpagehead mb6">
+        <div class="flex justify-between sectionhead">
           <h1>Redlines</h1>
           <h3 class="ml2"><a href="#" class="topofpage">&#94;top</a></h3>
         </div>
@@ -180,15 +180,11 @@
         </div>
 
 
-				<div class="flex justify-end altpagehead">
+				<div class="flex justify-end altpagehead mb8">
 					<h3 class="ml2"><a href="/">&#60;home</a> <a href="#" class="topofpage">&#94;top</a></h3>
 				</div>
 
 			</div>
-		</div>
-
-		<div class="over">
-			<div id="botbarspeed" class="bottomborder animated fadeInRight"></div>
 		</div>
 
 	</div>

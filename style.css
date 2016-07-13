@@ -53,6 +53,12 @@ body.nobackgroundmadness  {
   position: relative;
 }
 
+body.nonhome {
+  overflow: auto;
+  position: relative;
+  height: auto;
+}
+
 ul {
   list-style-type: none;
 }
@@ -375,20 +381,21 @@ ul.mobilelinks {
 
 /*APPS PAGE*/
 
-.apps .imagewraps {
-  text-align: center;
+.imagewraps:last-child {
+  padding-right: 0;
+}
+
+.imagewraps {
+  margin-bottom: 2rem;
+  padding-right: 20px;
 }
 
 .apps .imagewraps img {
-  max-width:94%;
+  max-width:100%;
   border-top: 1px solid #eee;
   -moz-box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
-}
-
-.apps .imagewraps img.ful {
-  max-width: 94%;
 }
 
 .apps .imagewraps img.noborder {
@@ -401,22 +408,33 @@ ul.mobilelinks {
 .apps .imagewraps img.bigger {
   max-width:100%;
 }
+
 .apps h1 {
   margin-left: 40px;
   margin-bottom: 40px;
 }
 
 .nonhome .main {
-  overflow: auto;
-  height: 98%;
-  padding-top: 40px;
-  margin-top: -1%;
+  padding: 0 20px 20px 20px;
+  background: none;
+  text-align: left;
+  max-width: none;
+}
+
+.nonhome .main .apps {
+  max-width: 1300px;
 }
 
 .nonhome .altpagehead {
-  width: 96%;
-  margin: 20px auto 40px auto;
-  max-width: 1300px;
+  padding: 20px 20px 0 20px;
+}
+
+.nonhome .altpagehead h1 {
+
+}
+
+.nonhome .altpagehead h3 {
+  line-height: 1.9;
 }
 
 .nonhome #thing {
@@ -438,25 +456,6 @@ ul.mobilelinks {
 /*  -ms-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);*/
-}
-
-.nonhome .main:before {
-  position: absolute;
-}
-
-.nonhome .apps {
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.imgrow {
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.imagewraps {
-  margin-bottom: 2rem;
 }
 
 /*HIPSTER TYPE*/
@@ -695,6 +694,10 @@ span.blink {
     }
 }
 
+.mb0 {
+  margin-bottom: 0px;
+}
+
 .mb05 {
   margin-bottom: 5px;
 }
@@ -834,6 +837,9 @@ span.blink {
   .main {
     padding: 16px 40px 0 44px;
   }
+  .nonhome .main {
+    padding: 16px 40px 0 40px;
+  }
   .face {
     max-width: 124px;
     min-width: 122px;
@@ -886,6 +892,9 @@ span.blink {
   }
   .main {
       padding: 16px 16px 0 32px;
+  }
+  .nonhome .main {
+    padding: 16px 16px 0 16px;
   }
   .onecol-flex-mobile-450 {
     -webkit-flex-direction: column;
