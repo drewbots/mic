@@ -99,7 +99,7 @@ input[type="button"]:focus {
   outline: 0;
   text-decoration: none;
   }
-  
+
 .page-wrapper {
   overflow: hidden;
   width: 100%;
@@ -321,6 +321,10 @@ ul.mobilelinks {
 
 .imagesize24 {
   max-width: 240px;
+}
+
+.imagesize26 {
+  max-width: 260px;
 }
 
 .imagesize2 {
