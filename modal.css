@@ -19,7 +19,7 @@
 }
 button.close {
   -webkit-appearance: none;
-  padding: 0;
+  padding: 4px;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -97,9 +97,6 @@ button.close {
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-}
-.modal-header .close {
-  margin-top: -2px;
 }
 .modal-title {
   margin: 0;
