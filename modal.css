@@ -3,7 +3,7 @@
   float: right;
   font-size: 36px;
   font-weight: bold;
-  line-height: 1;
+  line-height: .85;
   color: #000;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
@@ -19,7 +19,6 @@
 }
 button.close {
   -webkit-appearance: none;
-  padding: 4px;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -108,6 +107,7 @@ button.close {
 }
 .modal-body h5 {
   margin-bottom: 20px;
+  font-weight: 300;
 }
 .modal-body img, .modal-body p.type {
   width: 100%;
