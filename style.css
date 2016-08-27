@@ -221,7 +221,7 @@ h3 {
 
 .face {
   max-width: 200px;
-  min-width: 190px;
+  min-width: 192px;
 }
 
 .face img {
@@ -236,7 +236,7 @@ h3 {
 
 .sociallogo {
   width: 100%;
-  padding-right: 4px;
+  padding-right: 8px;
   margin: 0 !important;
   display: block;
 }
@@ -895,6 +895,10 @@ span.blink {
 }
 
 @media (max-width:450px) {
+  .mainwrap {
+    overflow: scroll;
+    height: auto;
+  }
   .face p.name {
     margin-left: 0px;
   }
