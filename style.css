@@ -212,7 +212,7 @@ h3 {
 .face p.bio {
   font-size: 60%;
   line-height: 1.6;
-  margin: 3px 0 6px 0;
+  margin: 3px 0 2px 0;
 }
 
 .face p.bio.first {
@@ -231,14 +231,18 @@ h3 {
 } 
 
 .socialline {
-  margin: 8px 0 10px 0 !important;
+  margin: 8px 0 6px 0 !important;
 }
 
 .sociallogo {
   width: 100%;
-  padding-right: 8px;
+  padding: 4px;
   margin: 0 !important;
   display: block;
+}
+
+.sociallogo:first-child {
+  margin-left: -4px !important;
 }
 
 .bottomright {
