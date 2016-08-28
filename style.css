@@ -411,12 +411,12 @@ ul.mobilelinks {
 
 /*APPS PAGE*/
 
-.imagewraps:last-child {
-  padding-right: 0;
-}
-
 .imagewraps {
   padding-right: 20px;
+}
+
+.imagewraps:last-child {
+  padding-right: 0;
 }
 
 .apps .imagewraps img {
@@ -832,10 +832,6 @@ span.blink {
 @media (max-width:768px) {
   .thing, .thingwrap, .thingwrap2, .thing2 {
     display: none;
-  }
-
-  .imagewraps {
-    margin-bottom: 1rem;
   }
 
   ul.links {
