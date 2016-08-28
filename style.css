@@ -118,10 +118,10 @@ input[type="button"]:focus {
 }
 
 .topbarwrap {
-  height: 30px;
+  height: 40px;
   width: 107%;
   margin-left: -1%;
-  margin-top: -1%;
+  margin-top: -20px;
 /*  -ms-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);*/
@@ -206,11 +206,15 @@ h3 {
 }
 
 .face p.name {
-  margin: 11px 0 8px -2px;
+  margin: 0px 0 8px -2px;
   line-height: 1.6;
   font-size: .85rem;
   position: fixed;
-  top: 238px;
+  top: 268px;
+  -webkit-animation-duration: 3s;
+  -moz-animation: all 5s; /* Firefox */
+  -webkit-animation: all 5s; /* Safari and Chrome */
+  -o-animation: all 5s; /* Opera */
 }
 
 .face p.bio {
