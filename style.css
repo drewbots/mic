@@ -466,6 +466,10 @@ ul.mobilelinks {
   line-height: 1.9;
 }
 
+.remove {
+  display: none;
+}
+
 .nonhome #thing {
   position: relative;
 }
