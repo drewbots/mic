@@ -206,20 +206,26 @@ h3 {
 }
 
 .face p.name {
-  margin-top: 10px;
-  margin-bottom: 8px;
-  margin-left: -2px;
+  margin: 11px 0 8px -2px;
   line-height: 1.6;
   font-size: .85rem;
+  position: absolute;
+  top: 238px;
 }
 
 .face p.bio {
   font-size: 60%;
   line-height: 1.6;
+  margin: 45px 0 2px 0;
+}
+
+.face p.list {
+  font-size: 60%;
+  line-height: 1.6;
   margin: 3px 0 2px 0;
 }
 
-.face p.bio.first {
+.face p.list.first {
   margin: 8px 0 6px 0;
 }
 
