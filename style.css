@@ -118,10 +118,10 @@ input[type="button"]:focus {
 }
 
 .topbarwrap {
-  height: 40px;
+  height: 30px;
   width: 107%;
   margin-left: -1%;
-  margin-top: -20px;
+  margin-top: -1%;
 /*  -ms-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);*/
@@ -206,21 +206,16 @@ h3 {
 }
 
 .face p.name {
-  margin: 0px 0 8px -2px;
+  margin: 12px 0 8px 0px;
   line-height: 1.6;
   font-size: .85rem;
-  position: fixed;
-  top: 268px;
-  -webkit-animation-duration: 3s;
-  -moz-animation: all 5s; /* Firefox */
-  -webkit-animation: all 5s; /* Safari and Chrome */
-  -o-animation: all 5s; /* Opera */
+  top: 238px;
 }
 
 .face p.bio {
   font-size: 60%;
   line-height: 1.6;
-  margin: 45px 0 2px 0;
+  margin: 6px 0 2px 0;
 }
 
 .face p.list {
@@ -835,11 +830,7 @@ span.blink {
     padding-bottom: 70px;
     padding-left: 2rem;
   }
-  ul.links h4 {
-    line-height: 30px;
-    font-size: .7rem;
-    font-weight: 400;
-  }
+
 
 }
 
@@ -877,8 +868,7 @@ span.blink {
     min-width: 122px;
   }
   .face p.name {
-    margin: 11px 0 8px -3px;
-    top: 150px;
+    margin-left: -3px;
   }
   .work {
     padding-top: 20px;
