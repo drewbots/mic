@@ -232,6 +232,11 @@ h3 {
 
 .socialline {
   margin: 8px 0 6px 0 !important;
+  min-height: 28px;
+}
+
+.socialline a {
+
 }
 
 .sociallogo {
@@ -286,7 +291,9 @@ ul.links h5 {
 }
 
 .work {
-/*  -moz-transform: rotate(1deg);*/
+  height: 100%;
+  overflow: scroll;
+  /*  -moz-transform: rotate(1deg);*/
 }
 
 ul.otherside {
@@ -804,9 +811,6 @@ span.blink {
     font-size: .9rem;
   }
 
-  .work {
-    height: 100%;
-  }
   ul.otherside li {
     padding-left: 0;
   }
@@ -898,11 +902,8 @@ span.blink {
   }
 }
 
-@media (max-width:450px) {
-  .mainwrap {
-    overflow: scroll;
-    height: auto;
-  }
+@media (max-width: 450px) {
+
   .face p.name {
     margin-left: 0px;
   }
