@@ -81,6 +81,10 @@ a:focus, span {
 a:visited {
 }
 
+a.inverse {
+  color: #0000ee;
+}
+
 p {
   font-size: .8rem;
 }
