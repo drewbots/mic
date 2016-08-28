@@ -873,7 +873,8 @@ span.blink {
     min-width: 122px;
   }
   .face p.name {
-    margin-left: -3px;
+    margin: 11px 0 8px -3px;
+    top: 150px;
   }
   .work {
     padding-top: 20px;
