@@ -302,7 +302,7 @@ ul.links h5 {
 
 .work {
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   /*  -moz-transform: rotate(1deg);*/
 }
 
