@@ -910,6 +910,7 @@ span.blink {
   }
   .over {
     margin-top: -19px;
+    height: 11px;
   }
   .face p.name {
     margin-left: 0px;
