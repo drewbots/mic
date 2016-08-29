@@ -875,14 +875,14 @@ span.blink {
     position: static;
   }
   ul.links {
-
+    min-width: auto;
   }
   ul.links li:first-child {
       margin-top: 16px;
   }
   ul.links h4 {
     line-height: 32px;
-    font-size: .75rem;
+    font-size: .65rem;
   }
   .apps .imagewraps img.fulmobile {
     max-width: 94%;
@@ -905,12 +905,18 @@ span.blink {
 }
 
 @media (max-width: 450px) {
-
+.topbarwrap {
+    height: 12px;
+  }
+  .over {
+    margin-top: -19px;
+  }
   .face p.name {
     margin-left: 0px;
   }
   .main {
-      padding: 16px 16px 0 32px;
+      padding: 16px 9px 0 18px;
+      background-size: .5em, .85em;
   }
   .nonhome .main {
     padding: 16px 16px 0 16px;
