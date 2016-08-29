@@ -875,7 +875,7 @@ span.blink {
     position: static;
   }
   ul.links {
-    min-width: auto;
+    min-width: initial;
   }
   ul.links li:first-child {
       margin-top: 16px;
