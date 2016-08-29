@@ -229,6 +229,7 @@ h3 {
 }
 
 .face {
+  min-height: 600px;
   max-width: 200px;
   min-width: 192px;
 }
