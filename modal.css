@@ -111,10 +111,10 @@ button.close {
 }
 .modal-body img, .modal-body p.type {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .modal-body a {
-  text-align: right;
+
 }
 .modal-footer {
   padding: 15px;

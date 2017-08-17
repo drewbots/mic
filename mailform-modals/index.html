@@ -1,0 +1,117 @@
+<html>
+<head>
+
+  <link href="../simpleflex.css" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="../normalize.css">
+
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      max-width: 100%;
+      margin: 0 20px;
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;  
+      line-height: 1.4;
+    }
+    
+    img {
+      width: 100%;
+    }
+
+    .pb2 {
+      padding-bottom: 20px;
+    }
+    .pb4 {
+      padding-bottom: 40px;
+    }
+    .pb6 {
+      padding-bottom: 60px;
+    }
+    .pb8 {
+      padding-bottom: 80px;
+    }
+    .pb9 {
+      padding-bottom: 90px;
+    }
+    .pb10 {
+      padding-bottom: 100px;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<br><br>
+<h1>Modal Design for Mailform</h1>
+<p style="max-width:800px;">
+There are two primary modals on the website: one for uploading cloud documents and another for login/signup. I redesigned them both in the same timespace. Arguably, we shuold not be using modals, but that is more of an upstream decision. I simply wanted to make very clean and simple modals, while improving UX and copy.
+</p>
+
+<br><br>
+<br><br>
+
+<div class="flex col-mobile">
+
+  <div class="half-child" style="padding-right:40px; border-right: 1px solid #e2e2e2;">
+
+      <h2 style="text-transform:uppercase">Login/Signup Modal</h2>
+      <p class="pb2">The login/signup modal used to look like this:</p>
+      <img class="pb6" src="1.png">
+      <br><br><br>
+
+      <p>I also used the selectors for Log In options:</p>
+      <img class="pb4" src="3.png">
+      <br><br><br>
+
+      <p>Put forms on the left, add a sub bar:</p>
+      <img src="4.png">
+      <br><br><br>
+
+      <p>The sub bar felt busy, can we remove the Remember Me checkbox also? (My friends say no, "quickbooks requires it.")</p>
+      <img src="5.png">
+      <br><br><br>
+
+      <p>Experiment with close button:</p>
+      <img src="6.png">
+      <br><br><br>
+
+      <p>Finalize and make button image an SVG, ftw:</p>
+      <img src="7.png">
+      <br><br><br>
+
+      <p>Remove Forget Password (it's is not implemented yet. Feature request made.). Add Remember Me:</p>
+      <img src="8.png">
+      <br><br><br>
+
+  </div>
+
+  <div class="half-child" style="padding-left:40px;">
+      <h2 style="text-transform:uppercase">Upload Modal</h2>
+      <p>The same design is used for modals accessed on the home page and postcard page. It used to look like this:</p>
+      <img src="0a.png">
+      <br><br><br>
+
+      <p>I thought a lot about what the upload buttons should look like, comparing similar designs on various websites. I decided that more than 3 traditional, rounded-corner buttons stacked or batched in a row feels overwelming. I made them look and act more like <i>selectors or a menu</i> than buttons:</p>
+      <img src="0b.png">
+      <br><br><br>
+
+      <p>Moved the standard, Upload An Image button to the parent page. So, the big main red button simply asks you to open a file on your computer, no pop-up:</p>
+      <img class="pb2" src="9.png">
+      <br><br><br>
+
+      <p>Video showing both modals</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_dS6jfqSyck" frameborder="0" allowfullscreen></iframe>
+      <br><br><br>
+  </div>
+
+</div>
+
+<br><br><br><br>
+
+</body>
+</html>
