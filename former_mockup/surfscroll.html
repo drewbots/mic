@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Surf Show</title>
+  <meta name="description" content="">
+
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="TweenMax.min.js"></script>
+  <script type="text/javascript" src="animation.gsap.js"></script>
+  <script type="text/javascript" src="debug.addIndicators.js"></script>
+</head>
+
+<body style="margin:0; background:black;">
+
+<div style="height:130vh; position:absolute; width:20px;"></div>
+<div id="imagesequence" id="trigger">
+	<img id="myimg" src="1.png" style="display: block; width: 100%; height: 100vh; object-fit: cover;">
+</div>
+<img src="0.jpg" style="width:100%;">
+<script>
+	// define images
+	var images = [
+		"1.png",
+		"2.png",
+		"3.png",
+		"4.png",
+		"5.png",
+		"6.png",
+		"7.png",
+		"8.png",
+		"9.png",
+		"10.png",
+		"11.png",
+		"12.png",
+		"13.png",
+		"14.png",
+		"15.png",
+		"16.png",
+		"17.png",
+		"18.png",
+		"19.png",
+
+	];
+
+	// TweenMax can tween any property of any object. We use this object to cycle through the array
+	var obj = {curImg: 0};
+
+	// create tweenfile:///C:/Users/Andrew/Desktop/1.png
+	var tween = TweenMax.to(obj, 0.5,
+		{
+			curImg: images.length - 1,	// animate propery curImg to number of images
+			roundProps: "curImg",				// only integers so it can be used as an array index
+			repeat: 0,									// repeat 3 times
+			immediateRender: true,			// load first image automatically
+			ease: Linear.easeNone,			// show every image the same ammount of time
+			onUpdate: function () {
+			  $("#myimg").attr("src", images[obj.curImg]); // set the image source
+			}
+		}
+	);
+
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+	// build scene
+	var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 240})
+					.setTween(tween)
+					.removeIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	// handle form change
+	$("form.move input[name=duration]:radio").change(function () {
+		scene.duration($(this).val());
+	});
+</script>
+
+</body>
+</html>
